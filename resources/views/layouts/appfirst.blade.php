@@ -8,7 +8,9 @@
                 'resources/js/hautPage.js',
                 'resources/js/svgMove.js',
                 'resources/js/deskSmart.js',
-                'resources/js/functionScroll.js',])
+                'resources/js/functionScroll.js',
+                'resources/js/reviewStars.js',
+                'resources/js/carouselAvis.js',])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJW développeur web freelance</title>
     <link rel="icon" href="images/ajweb.svg" type="image/svg+xml">

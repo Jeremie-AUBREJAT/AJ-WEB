@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    @vite(['resources/css/app.css', 'resources/js/app.js',])
+    @vite(['resources/css/app.css', 'resources/js/app.js','resources/js/reviewStars.js',
+    'resources/js/reviewFilter.js'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJW développeur web freelance</title>
     <link rel="icon" href="images/ajweb.svg" type="image/svg+xml">
