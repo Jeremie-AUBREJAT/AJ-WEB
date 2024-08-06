@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Ajouter les 6 derniers avis au conteneur, du plus récent au plus ancien
     function displayRecentReviews() {
-        const recentReviews = reviews.slice(-7).reverse(); // Prendre les 6 derniers avis et inverser l'ordre
+        const recentReviews = reviews.slice(-6).reverse(); // Prendre les 6 derniers avis et inverser l'ordre
         slidesContainer.innerHTML = recentReviews.map(createReviewHTML).join('');
         adjustCardHeights();
     }

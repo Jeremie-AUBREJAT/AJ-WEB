@@ -2,8 +2,23 @@
 
 @section('content')
 
-<div class="bg-gray-100 p-8">
+<div class="bg-gray-100 p-8 mt-8">
     <h1 class="text-3xl font-bold mb-8 text-center">Tous les sites</h1>
+    <div class="flex space-x-4 my-8"> <!-- Ajouté espace entre les boutons -->
+        <a href="/" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Accueil
+        </a>
+        <a href="/websites" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Tout les sites
+        </a>
+        <a href="/reviews" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Tout les avis
+        </a>
+        <a href="/websites/create" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Ajouter un site
+        </a>
+    </div>
+    
 {{-- pour le front --}}
     {{-- <div class="flex flex-wrap justify-center gap-8">
         @foreach ($websites as $website)
@@ -27,7 +42,7 @@
         @endforeach
     </div> --}}
     
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8">
         @foreach ($websites as $website)
             <div class="bg-white p-6 rounded-lg shadow-lg w-full">
                 <h2 class="text-xl font-semibold mb-2 text-center">{{ $website->name }}</h2>

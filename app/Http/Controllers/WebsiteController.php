@@ -8,7 +8,16 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class WebsiteController extends Controller
-{
+{   
+    // afficher tout les sites en front
+    public function indexFront()
+    {
+        // Récupérer tous les sites web avec leurs images associées
+        $websites = Website::with('pictures')->get();
+    
+        // Passer les données à la vue
+        return view('allWebsites', compact('websites'));
+    }
     public function index()
     {
         // Récupérer tous les sites web avec leurs images associées

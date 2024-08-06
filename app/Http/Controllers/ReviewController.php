@@ -80,7 +80,7 @@ public function showallreviews()
     public function show($id)
     {
         $review = Review::findOrFail($id);
-        return view('admin.reviews.show', compact('review'));
+        return view('reviews.show', compact('review'));
     }
 
     // Approuver un avis

@@ -16,6 +16,7 @@ export default defineConfig({
                 'resources/js/reviewStars.js',
                 'resources/js/carouselAvis.js',
                 'resources/js/reviewFilter.js',
+                'resources/js/blurcard.js',
             ],
             refresh: true,
         }),

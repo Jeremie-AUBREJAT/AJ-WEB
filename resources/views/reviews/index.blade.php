@@ -3,6 +3,20 @@
 @section('content')
 <div class="container mx-auto px-4 py-6 mt-8">
     <h1 class="text-2xl font-bold mb-4">Gestion des Avis</h1>
+    <div class="flex space-x-4 my-8"> <!-- Ajouté espace entre les boutons -->
+        <a href="/" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Accueil
+        </a>
+        <a href="/websites" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Tout les sites
+        </a>
+        <a href="/reviews" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Tout les avis
+        </a>
+        <a href="/websites/create" class="inline-block bg-blue-600 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Ajouter un site
+        </a>
+    </div>
 
     @if (session('success'))
         <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">

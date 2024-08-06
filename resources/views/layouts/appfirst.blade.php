@@ -10,39 +10,40 @@
                 'resources/js/deskSmart.js',
                 'resources/js/functionScroll.js',
                 'resources/js/reviewStars.js',
-                'resources/js/carouselAvis.js',])
+                'resources/js/carouselAvis.js',
+                'resources/js/blurcard.js',])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJW développeur web freelance</title>
     <link rel="icon" href="images/ajweb.svg" type="image/svg+xml">
-    {{-- <script src="asset/hautPageboutongris.js"></script>
-    <script src="asset/move.js"></script>
-    <script src="asset/functions/progress.js"></script>
-    <script src="asset/functions/hautPage.js"></script>
-    <script src="asset/functions/svgMove.js"></script>  
-    <script src="asset/functions/deskSmart.js" ></script>
-    <script src="asset/functions/functionScroll.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="./src/move.css"> --}}
 </head>
 <body>
+   
     <header id="header" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/back2.png')">
+      
         <!-- Background image -->
         <!--<div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('images/background2.png');"style="all: unset;"></div>-->
         <!-- <div class="fixed z-30 w-full top-0 h-2 bg-gradient-to-r from-gray-600 to-gray-900 flex justify-between" ></div> -->
         <div id="desknav" class="h-10 flex justify-between items-center top-0 fixed w-full z-20 bg-gradient-to-r from-gray-700 to-gray-900">
+         
            <div class="flex items-center">
               <img src="images/ajweb.svg" class="p-6 w-20" alt="Logo">
               <div class="text-gray-200 italic font-bold text-3xl">AJ-WEB
               </div>
            </div>
+           @auth
+    <div class="flex space-x-4"> <!-- Ajouté espace entre les boutons -->
+        <a href="/dashboard" class="inline-block bg-blue-600 text-white font-semibold text-lg py- px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+            Tableau de bord
+        </a>
+    </div>
+@endauth
            <nav class="flex items-center">
               <a href="#competences" class="underline decoration-1 text-gray-200 italic text-2xl p-4 mr-4 ">Services</a>
               <a href="#portfolio" class="underline decoration-1 text-gray-200 italic text-2xl p-4 mr-4">Créations web</a>
               <a href="#contact" class="underline decoration-1 text-gray-200 italic text-2xl p-4">Contact</a>
            </nav>
         </div>
-     
+        
         <div id="header2" class="h-screen lg:h-full flex flex-col items-center justify-center">
      
            <svg class="w-11/12" version="1.1" id="svg1" width="1920" height="1920" viewBox="0 0 1920 1920" sodipodi:docname="logo3.svg" inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
