@@ -19,6 +19,7 @@ export default {
                 'custom-blue2': '#364050', 
                
               },
+            
         },
     },
 

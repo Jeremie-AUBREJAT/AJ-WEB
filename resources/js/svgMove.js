@@ -16,12 +16,12 @@ function lancerAnimation() {
    
 
     // Définition des transitions
-    chemin1.style.transition = 'transform 0.8s ease, opacity 2s ease';
-    chemin2.style.transition = 'transform 0.8s ease, opacity 2s ease';
-    chemin3.style.transition = 'transform 0.5s ease, opacity 2s ease';
-    chemin4.style.transition = 'transform 0.5s ease, opacity 2s ease';
-    chemin5.style.transition = 'transform 0.5s ease,opacity 2s ease';
-    chemin6.style.transition = 'transform 0.5s ease,opacity 2s ease';
+    chemin1.style.transition = 'transform 0.5s ease, opacity 1s ease';
+    chemin2.style.transition = 'transform 0.5s ease, opacity 1s ease';
+    chemin3.style.transition = 'transform 0.3s ease, opacity 1s ease';
+    chemin4.style.transition = 'transform 0.3s ease, opacity 1s ease';
+    chemin5.style.transition = 'transform 0.3s ease,opacity 1s ease';
+    chemin6.style.transition = 'transform 0.3s ease,opacity 1s ease';
 
     // Démarrage de l'animation après un délai de 5 secondes
     setTimeout(function() {

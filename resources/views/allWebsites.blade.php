@@ -19,7 +19,7 @@
                     
                     <!-- Title Overlay -->
                     <div class="absolute inset-x-0 top-0 bg-white bg-opacity-80 p-4 text-center title-overlay">
-                        <h3 class="text-gray-800 text-xl font-bold">{{ $website->name }}</h3>
+                        <h3 class="text-blue-950 text-2xl font-bold">{{ $website->name }}</h3>
                     </div>
                     
                     <!-- Button SVG -->

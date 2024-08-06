@@ -18,17 +18,7 @@ class ReviewController extends Controller
 
     //     return view('home', compact('reviews'));
     // }
-    public function showHome()
-{
-    // Récupérer tous les avis approuvés
-    $reviews = Review::where('approved', true)->get();
     
-    // Calculer la moyenne des notes
-    $averageRating = $reviews->avg('rating');
-    
-    // Passer les avis et la note moyenne à la vue
-    return view('home', compact('reviews', 'averageRating'));
-}
 
 public function showallreviews()
 {
