@@ -102,39 +102,45 @@
                     <!-- Service 1 -->
                     <div class="p-8">
                         <div class="relative rounded-lg overflow-hidden p-4">
-                            <a href="#competences" class="relative block group">
+                            <div class="relative block group">
                                 <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out rounded-bl-full group-hover:opacity-70"
                                     src="images/fond1.png" alt="Fonctionnalité sur Mesure">
                                 <div
-                                    class="absolute inset-0 bg-sky-700 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-90 rounded-bl-full m-4">
+                                    class="absolute inset-0 bg-sky-800 opacity-50 transition-opacity duration-500 ease-in-out group-hover:opacity-90 rounded-bl-full m-4">
                                 </div>
                                 <div
                                     class="absolute top-0 left-0 right-0 p-6 flex flex-col justify-start items-start text-white">
                                     <h2 class="text-xl font-semibold mb-2 p-8 mx-auto">Fonctionnalité sur Mesure</h2>
-                                    <p class="text-lg p-8 font-semibold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff; display: block; margin: auto;" class="size-8">
+                                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+                                      </svg>
+                                    <p class="text-lg text-center p-8 font-semibold">
                                         Nous créons des <strong>sites web personnalisés</strong> et sur mesure pour répondre
                                         à vos <strong>besoins uniques</strong>,
                                         avec une attention particulière aux détails et une approche
                                         <strong>axée sur l'utilisateur</strong>.
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Service 2 -->
                     <div class="p-8">
                         <div class="relative rounded-lg overflow-hidden p-4">
-                            <a href="#competences" class="relative block group">
+                            <div class="relative block group">
                                 <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out group-hover:opacity-70"
                                     src="images/fond2.png" alt="SEO et Performance Web">
                                 <div
-                                    class="absolute inset-0 bg-sky-700 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-90 m-4">
+                                    class="absolute inset-0 bg-sky-800 opacity-70 transition-opacity duration-500 ease-in-out group-hover:opacity-90 m-4">
                                 </div>
                                 <div
                                     class="absolute top-0 left-0 right-0 p-6 flex flex-col justify-start items-start text-white">
                                     <h2 class="text-xl font-semibold mb-2 p-8 mx-auto">SEO et Performance Web</h2>
-                                    <p class="text-lg p-8 font-semibold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff; display: block; margin: auto;" class="size-8">
+                                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+                                      </svg>
+                                    <p class="text-lg text-center p-8 font-semibold">
                                         Nous garantissons des <strong>performances exceptionnelles</strong> pour vos sites
                                         web,
                                         avec des temps de chargement rapides et une expérience utilisateur fluide sur tous
@@ -147,23 +153,26 @@
                                         qui répondent aux meilleures pratiques du <strong>SEO</strong>.
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Service 3 -->
                     <div class="p-8">
                         <div class="relative rounded-lg overflow-hidden p-4">
-                            <a href="#competences" class="relative block group">
+                            <div class="relative block group">
                                 <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out rounded-br-full group-hover:opacity-70"
                                     src="images/fond3.png" alt="Sites Web Responsive">
                                 <div
-                                    class="absolute inset-0 bg-sky-700 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-90 rounded-br-full m-4">
+                                    class="absolute inset-0 bg-sky-800 opacity-50 transition-opacity duration-500 ease-in-out group-hover:opacity-90 rounded-br-full m-4">
                                 </div>
                                 <div
                                     class="absolute top-0 left-0 right-0 p-6 flex flex-col justify-start items-start text-white">
                                     <h2 class="text-xl font-semibold mb-2 p-8 mx-auto">Sites Web Responsive</h2>
-                                    <p class="text-lg p-8 font-semibold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff; display: block; margin: auto;" class="size-8">
+                                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+                                      </svg>
+                                    <p class="text-lg text-center p-8 font-semibold">
                                         Nous concevons des sites web entièrement <strong>responsive</strong>, garantissant
                                         une <strong>expérience utilisateur fluide</strong>
                                         et <strong>cohérente</strong> sur tous les types d'appareils, y compris les
@@ -171,7 +180,7 @@
                                         <strong>ordinateurs</strong>.
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
