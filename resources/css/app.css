@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @font-face {
+    font-family: 'Nunito Black';
+    src: url('/public/fonts/Nunito-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Nunito Black', sans-serif;
+  }
+
+   */
+   @font-face {
+    font-family: 'arialroundedmtbold';
+    src: url('/public/fonts/arialroundedmtbold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'arialroundedmtbold', sans-serif;
+  }

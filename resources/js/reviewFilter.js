@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4" style="display: flex; flex-direction: column; height: ${fixedHeight}px; box-sizing: border-box; overflow: auto;">
                     <p class="text-gray-600 text-sm mb-2" style="margin: 0;">Le: ${new Date(review.created_at).toLocaleDateString('fr-FR')}</p>
                     <div class="flex items-center mb-2">   
-                        <h2 class="text-lg font-semibold mr-2">${review.name}</h2>
+                        <h2 class="text-xl font-bold mr-2 text-sky-700">${review.name}</h2>
                         <div class="flex">
                             ${Array.from({ length: 5 }, (_, i) => `
                                 <svg class="w-5 h-5 ${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}" fill="currentColor" viewBox="0 0 24 24">

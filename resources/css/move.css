@@ -1,0 +1,97 @@
+@keyframes slideRight {
+    0% {
+      transform: translateX(-800px);
+    }
+    100% {
+      transform: translateX(0px); /* Ajustez la valeur selon votre besoin */
+    }
+  }
+  
+  .moveRight {
+    animation: slideRight 0.5s ease forwards; /* Ajustez la durée et le timing selon vos besoins */
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(800px);
+    }
+    100% {
+      transform: translateX(0px); /* Ajustez la valeur selon votre besoin */
+    }
+  }
+  
+  .moveLeft {
+  animation: slideLeft 0.5s ease forwards; /* Ajustez la durée et le timing selon vos besoins */
+  }
+  /* Cacher l'élément sur les petits écrans */
+@media (max-width: 640px) {
+  .smartphone {
+      display: none;
+  }
+}
+
+
+@keyframes fillProgressBar {
+  0% { width: 0%; }
+  92% { width: 91.666%; } /* Correspond à 11/12 */
+  100% { width: 91.666%; }
+}
+
+.fill-animation {
+  animation: fillProgressBar 2s ease-in-out forwards;
+}
+@keyframes fillProgressBar2 {
+  0% { width: 0%; }
+  92% { width: 91.000%; } 
+  100% { width: 91.000%; }
+}
+
+.fill-animation2 {
+  animation: fillProgressBar2 2s ease-in-out forwards;
+}
+@keyframes fillProgressBar3 {
+  0% { width: 0%; }
+  92% { width: 90.333%; } 
+  100% { width: 91.333%; }
+}
+
+.fill-animation3 {
+  animation: fillProgressBar3 2s ease-in-out forwards;
+}
+.moveUp {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.moveUp2 {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes fillProgressBar {
+  0% { width: 0%; }
+  92% { width: 91.666%; } /* Correspond à 11/12 */
+  100% { width: 91.666%; }
+}

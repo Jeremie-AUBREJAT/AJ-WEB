@@ -28,32 +28,32 @@ checkVisibility(".progress-bar2", "fill-animation2");
 checkVisibility(".progress-bar3", "fill-animation3"); // Vérifier la visibilité au chargement de la page
 
 
-setInterval(function() {
-    const image1 = document.querySelector('.sliders');
-    const image2 = document.querySelector('.sliders1');
-    const image3 = document.querySelector('.sliders2');
-    const image4 = document.querySelector('.sliders3');
+// setInterval(function() {
+//     const image1 = document.querySelector('.sliders');
+//     const image2 = document.querySelector('.sliders1');
+//     const image3 = document.querySelector('.sliders2');
+//     const image4 = document.querySelector('.sliders3');
     
-    if (image1.classList.contains('block')) {
-        image1.classList.remove('block');
-        image1.classList.add('hidden'); 
-        image2.classList.remove('hidden');
-        image2.classList.add('block');
+//     if (image1.classList.contains('block')) {
+//         image1.classList.remove('block');
+//         image1.classList.add('hidden'); 
+//         image2.classList.remove('hidden');
+//         image2.classList.add('block');
 
-        image3.classList.remove('block');
-        image3.classList.add('hidden');
-        image4.classList.remove('hidden');
-        image4.classList.add('block'); 
+//         image3.classList.remove('block');
+//         image3.classList.add('hidden');
+//         image4.classList.remove('hidden');
+//         image4.classList.add('block'); 
         
-    } else {
-        image1.classList.remove('hidden');
-        image1.classList.add('block');
-        image2.classList.remove('block');
-        image2.classList.add('hidden');
+//     } else {
+//         image1.classList.remove('hidden');
+//         image1.classList.add('block');
+//         image2.classList.remove('block');
+//         image2.classList.add('hidden');
         
-        image3.classList.remove('hidden');
-        image3.classList.add('block');
-        image4.classList.remove('block');
-        image4.classList.add('hidden');
-    }
-}, 3000);
+//         image3.classList.remove('hidden');
+//         image3.classList.add('block');
+//         image4.classList.remove('block');
+//         image4.classList.add('hidden');
+//     }
+// }, 3000);

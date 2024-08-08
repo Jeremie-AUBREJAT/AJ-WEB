@@ -11,42 +11,40 @@
                     <!-- Contenu Textuel -->
                     <div class="w-full lg:w-1/2 px-6 md:px-12 text-center lg:text-left">
                         <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800 mb-4">
-
-                            <span class="text-sky-700">AJ-WEB</span> CONCEPTION ET DEVELOPPEMENT DE SITE INTERNET DANS LE
-                            CHER
+                            <span class="text-sky-700">AJ-WEB</span> CONCEPTION ET DEVELOPPEMENT DE SITE INTERNET DANS LE CHER
                         </h1>
+                        
                         <p class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">
-                            Chez <strong class="text-sky-700">AJ-WEB</strong>, situé à <strong>Savigny-en-Sancerre</strong>
-                            dans le département du Cher, nous offrons des services de <strong>développement web sur
-                                mesure</strong>.
-                            Nous nous engageons à créer des <strong>sites web modernes</strong> qui répondent aux
-                            <strong>besoins spécifiques</strong> de chaque client, avec une <strong>approche centrée sur
-                                l'utilisateur</strong>.
-                            Tous nos projets sont <strong>optimisés pour le référencement</strong> et conçus en respectant
-                            les normes d'<strong>accessibilité</strong>.
-                            De plus, nous veillons à ce que vos sites soient entièrement <strong>responsive</strong>,
-                            garantissant ainsi une expérience utilisateur fluide sur tous les appareils, qu'il s'agisse de
-                            <strong>mobiles</strong>, de <strong>tablettes</strong> ou d'<strong>ordinateurs</strong>.
-                            Faites confiance à <strong class="text-sky-700">AJ-WEB</strong> pour un <strong>service de
-                                qualité</strong>, axé sur la <strong>satisfaction de vos besoins</strong> et la réussite de
-                            vos projets numériques.
+                            Chez <strong class="text-sky-700">AJ-WEB</strong>, situé à <strong>Savigny-en-Sancerre</strong> dans le
+                            département du Cher, nous offrons des services de <strong>développement web sur mesure</strong>. Nous nous
+                            engageons à créer des <strong>sites web modernes</strong> qui répondent aux <strong>besoins spécifiques</strong>
+                            de chaque client, avec une <strong>approche centrée sur l'utilisateur</strong>.
                         </p>
+                        
+                        <p class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed mt-4">
+                            Tous nos projets sont <strong>optimisés pour le référencement</strong> et conçus en respectant les normes d'<strong>accessibilité</strong>.
+                            De plus, nous veillons à ce que vos sites soient entièrement <strong>responsive</strong>, garantissant ainsi
+                            une expérience utilisateur fluide sur tous les appareils, qu'il s'agisse de <strong>mobiles</strong>, de
+                            <strong>tablettes</strong> ou d'<strong>ordinateurs</strong>. Faites confiance à <strong class="text-sky-700">AJ-WEB</strong>
+                            pour un <strong>service de qualité</strong>, axé sur la <strong>satisfaction de vos besoins</strong> et la réussite de vos projets numériques.
+                        </p>
+                        
                     </div>
 
                     <!-- Image -->
-                    <div class="w-1/3 lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
+                    <div class="w-1/3 lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
                         <img src="images/th.jpg" alt="Description de l'image"
                             class="w-full max-w-md h-auto object-cover mx-auto rounded-full">
                     </div>
                 </section>
 
 
-                <!-- Desktop -->
+                <!-- Section services Desktop -->
+                <div id="services">
                 <div class="my-24 border-t-4 border-sky-700 mx-40"></div>
-
                 <div id="desktop"
                     class="mx-4 sm:mx-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-0">
-                    <div class="col-span-full text-center mb-8">
+                    <div  class="col-span-full text-center mb-8">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-16 h-16 mx-auto mb-4 text-sky-700">
                             <path fill-rule="evenodd"
@@ -63,38 +61,38 @@
                             <p class="text-lg md:text-xl text-gray-600">Découvrez comment nous pouvons vous aider à
                                 atteindre vos objectifs numériques avec nos services spécialisés.</p> --}}
                         <!-- Services Spécifiques -->
-                        <div id="services" class="mx-4 sm:mx-0 text-center mb-8">
+                        <div class="mx-4 sm:mx-0 text-center mb-8">
                             <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">Nos Services Spécifiques</h2>
-                            <p class="text-lg md:text-xl text-gray-600 mb-6">
+                            <p class="text-lg md:text-xl text-gray-700 mb-6">
                                 Nous vous proposons des services adaptés à vos besoins :
                             </p>
                             <div class="flex flex-col md:flex-row justify-center gap-8 mt-12">
                                 <!-- Service 1 -->
                                 <div class="p-4 md:w-1/3 border-l border-gray-200 md:border-l-2 md:border-r-0 last:border-r-0">
                                     <h3 class="text-2xl font-semibold text-sky-700 mb-2">Création de Sites Vitrines</h3>
-                                    <p class="text-lg text-gray-600">
+                                    <p class="text-lg text-gray-700">
                                         Des sites élégants et informatifs pour présenter votre activité en ligne, optimisés pour une navigation fluide et efficace.
                                     </p>
                                 </div>
                                 <!-- Service 2 -->
                                 <div class="p-4 md:w-1/3 border-l border-sky-700 md:border-l-2 last:border-r-0">
                                     <h3 class="text-2xl font-semibold text-sky-700 mb-2">Développement Personnalisé</h3>
-                                    <p class="text-lg text-gray-600">
+                                    <p class="text-lg text-gray-700">
                                         Que vous préfériez WordPress pour sa flexibilité ou des solutions de développement entièrement personnalisées, nous avons la compétence pour répondre à vos attentes.
                                     </p>
                                 </div>
                                 <!-- Service 3 -->
                                 <div class="p-4 md:w-1/3 border-l border-sky-700 md:border-l-2 last:border-r-0">
                                     <h3 class="text-2xl font-semibold text-sky-700 mb-2">Développement de Petits E-commerce</h3>
-                                    <p class="text-lg text-gray-600">
+                                    <p class="text-lg text-gray-700">
                                         Des solutions e-commerce sur mesure pour gérer vos ventes en ligne avec efficacité, adaptées à vos besoins spécifiques.
                                     </p>
                                 </div>
                             </div>
-                            <p class="text-lg md:text-xl text-gray-600 mt-12">
+                            <p class="text-lg md:text-xl text-gray-700 mt-12">
                                 Nous proposons également des services de maintenance sans abonnement, et vous bénéficiez de la pleine propriété de votre site.
                             </p>
-                            <div class="my-2 border-t-2 border-sky-700 mx-40"></div>
+                            <div class="my-2 border-t-4 border-orange-400 mx-60"></div>
                         </div>
                         
 
@@ -132,7 +130,7 @@
                                 <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out group-hover:opacity-70"
                                     src="images/fond2.png" alt="SEO et Performance Web">
                                 <div
-                                    class="absolute inset-0 bg-sky-800 opacity-70 transition-opacity duration-500 ease-in-out group-hover:opacity-90 m-4">
+                                    class="absolute inset-0 bg-sky-800 opacity-80 transition-opacity duration-500 ease-in-out group-hover:opacity-95 m-4">
                                 </div>
                                 <div
                                     class="absolute top-0 left-0 right-0 p-6 flex flex-col justify-start items-start text-white">
@@ -140,7 +138,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff; display: block; margin: auto;" class="size-8">
                                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
                                       </svg>
-                                    <p class="text-lg text-center p-8 font-semibold">
+                                    <p class="text-l text-center p-8 font-semibold">
                                         Nous garantissons des <strong>performances exceptionnelles</strong> pour vos sites
                                         web,
                                         avec des temps de chargement rapides et une expérience utilisateur fluide sur tous
@@ -184,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
                 <!-- Smartphone -->
 
                 <div id="smartphone"
@@ -229,7 +227,7 @@
 
                             <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">
                                 COMPÉTENCES</h2>
-                            <p class="text-lg md:text-xl text-gray-600">Explorez notre expertise technique et découvrez
+                            <p class="text-lg md:text-xl text-gray-700">Explorez notre expertise technique et découvrez
                                 comment nos compétences peuvent répondre à vos besoins spécifiques. Chaque compétence est
                                 représentée par une icône pour une compréhension rapide.</p>
                             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
@@ -303,9 +301,10 @@
                             </div>
                         </div>
                     </section>
-                    <div class="my-24 border-t-4 border-sky-700 mx-40"></div>
+                    <div id="creations">
+                    <div class="mt-24 border-t-4 border-sky-700 mx-40"></div>
                     {{-- section sites web --}}
-                    <section class="container mx-auto px-4 py-8 bg-gray-100 mt-8">
+                    <section  class="container mx-auto px-4 py-8 bg-gray-100 mt-8">
                         <div class="container text-center mx-auto mb-8">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="60" height="60" style="display: block; margin: auto; fill: #0369a1;">
                                 <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
@@ -323,7 +322,7 @@
                             @foreach ($websites as $website)
                                 <div class="relative overflow-hidden rounded-lg card" data-url="{{ $website->url }}">
                                     <!-- Image -->
-                                    <div class="relative">
+                                    <div class="relative transition duration-300 transform hover:scale-105">
                                         <img src="{{ asset($website->pictures->first()->path) }}"
                                             class="w-full h-60 object-cover rounded-lg"
                                             alt="Image for {{ $website->name }}" />
@@ -351,7 +350,7 @@
 
                                     <!-- Description -->
                                     <div class="p-4">
-                                        <p class="text-gray-600">{{ Str::limit($website->description, 100) }}</p>
+                                        <p class="text-gray-700">{{ Str::limit($website->description, 100) }}</p>
                                     </div>
                                 </div>
                             @endforeach
@@ -359,18 +358,19 @@
                         <!-- Bouton pour voir tous les sites web -->
                         <div class="text-center my-8">
                             <a href="{{ route('websites.all') }}"
-                                class="inline-block bg-sky-700 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-sky-900 transition duration-300">
+                                class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                 Toutes les Créations
                             </a>
                         </div>
                     </section>
+                </div>
                     <!-- Section de contact -->
                     <div class="my-8">
                         <div class="container mx-auto text-center">
                             <p class="mb-4 text-gray-700 text-xl font-semibold">Vous souhaitez obtenir un devis ou des informations supplémentaires ?</p>
                             <div>
-                                <a href="contact.php#contact" 
-                                   class="inline-block bg-sky-700 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-sky-900 transition duration-300">
+                                <a href="/contact" 
+                                   class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                    Contactez-nous
                                 </a>
                             </div>
@@ -380,13 +380,14 @@
                     <!-- Pied de page -->
                     {{-- section pour les avis --}}
                     <!-- home.blade.php -->
+                    <div class="my-24 border-t-4 border-sky-700 mx-40"></div>
                     <section class="container mx-auto px-4 py-8 bg-white">
                         <h1 class="text-2xl font-bold mb-6 ml-12 text-sky-700">Avis Clients les plus récents</h1>
 
                         <!-- Bouton pour accéder au formulaire d'avis -->
                         <div class="mb-6 ml-12">
                             <a href="review/create"
-                                class="inline-block bg-sky-700 text-white font-semibold text-lg py-2 px-4 rounded-lg shadow hover:bg-sky-900 transition duration-300">
+                                class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                 Laisser un avis
                             </a>
                         </div>
@@ -413,7 +414,7 @@
                         <!-- Button to view all reviews -->
                         <div class="text-center mt-12">
                             <a href="allreviews"
-                                class="inline-block bg-sky-700 text-white py-2 px-4 text-lg font-semibold rounded-lg shadow hover:bg-sky-900 transition duration-300">
+                                class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                 Voir tous les avis
                             </a>
                         </div>

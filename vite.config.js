@@ -6,6 +6,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css',
+                'resources/css/move.css',
                 'resources/js/app.js',
                 'resources/js/move.js',
                 'resources/js/progress.js',
