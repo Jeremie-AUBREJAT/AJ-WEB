@@ -363,6 +363,7 @@
                             </a>
                         </div>
                     </section>
+                    <div class="my-24 border-t-4 border-sky-700 mx-40"></div>
                 </div>
                     <!-- Section de contact -->
                     <div class="my-8">
