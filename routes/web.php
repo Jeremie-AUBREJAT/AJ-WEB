@@ -9,10 +9,14 @@ use App\Http\Controllers\HomeController;
 
 // Route::get('/', function () {
 //     return view('home');
-   
+
 // });
 Route::get('/', [HomeController::class, 'indexHome'])->name('home');
 Route::get('/all-websites', [WebsiteController::class, 'indexFront'])->name('websites.all');
+Route::view('/mentionslegales', 'mentionslegales')->name('mentionslegales');
+Route::get('/politique-confidentialite', function () {
+    return view('privacypolicies');
+})->name('politique-confidentialite');
 
 // Route::get('/', [ReviewController::class, 'showHome'])->name('home');
 Route::get('/allreviews', [ReviewController::class, 'showallreviews'])->name('home');
@@ -47,24 +51,23 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     // route back website
-Route::get('/websites/create', [WebsiteController::class, 'create'])->name('websites.create');
-Route::post('/websites', [WebsiteController::class, 'store'])->name('websites.store');
-Route::get('/websites', [WebsiteController::class, 'index'])->name('websites.index');
-Route::get('/websites/{id}/edit', [WebsiteController::class, 'edit'])->name('websites.edit');
-Route::put('/websites/{id}', [WebsiteController::class, 'update'])->name('websites.update');
-Route::delete('/websites/{id}', [WebsiteController::class, 'destroy'])->name('websites.destroy');
-// Afficher tous les avis pour modération
-Route::get('/reviews', [ReviewController::class, 'index'])->name('review.index');
+    Route::get('/websites/create', [WebsiteController::class, 'create'])->name('websites.create');
+    Route::post('/websites', [WebsiteController::class, 'store'])->name('websites.store');
+    Route::get('/websites', [WebsiteController::class, 'index'])->name('websites.index');
+    Route::get('/websites/{id}/edit', [WebsiteController::class, 'edit'])->name('websites.edit');
+    Route::put('/websites/{id}', [WebsiteController::class, 'update'])->name('websites.update');
+    Route::delete('/websites/{id}', [WebsiteController::class, 'destroy'])->name('websites.destroy');
+    // Afficher tous les avis pour modération
+    Route::get('/reviews', [ReviewController::class, 'index'])->name('review.index');
 
-// Afficher les détails d'un avis spécifique
-Route::get('/reviews/{id}', [ReviewController::class, 'show'])->name('review.show');
+    // Afficher les détails d'un avis spécifique
+    Route::get('/reviews/{id}', [ReviewController::class, 'show'])->name('review.show');
 
-// Approuver un avis
-Route::patch('/reviews/{id}/approve', [ReviewController::class, 'approve'])->name('review.approve');
+    // Approuver un avis
+    Route::patch('/reviews/{id}/approve', [ReviewController::class, 'approve'])->name('review.approve');
 
-// Rejeter un avis
-Route::delete('/reviews/{id}/reject', [ReviewController::class, 'reject'])->name('review.reject');
-
+    // Rejeter un avis
+    Route::delete('/reviews/{id}/reject', [ReviewController::class, 'reject'])->name('review.reject');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

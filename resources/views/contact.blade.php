@@ -69,8 +69,8 @@
             <div class="flex items-center mb-4">
                 <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2">
                 <label for="rgpd" class="text-gray-700">
-                    J'accepte les <a href="/politique-de-confidentialite" class="text-blue-600 hover:underline"
-                        target="_blank">conditions de confidentialité</a>.
+                    J'accepte les <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
+                        target="_blank">Politique de confidentialité</a>.
                 </label>
             </div>
 
