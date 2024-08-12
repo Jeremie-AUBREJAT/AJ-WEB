@@ -4,7 +4,7 @@ function lancerAnimation() {
     var chemin3 = document.getElementById('path3');
     var chemin4 = document.getElementById('path4');
     var chemin5 = document.getElementById('path5');
-    var chemin6 = document.getElementById('path6');
+    // var chemin6 = document.getElementById('path6');
     
     // Préparation initiale des chemins
     chemin1.style.transform = 'translate(0, 650px)';
@@ -12,7 +12,7 @@ function lancerAnimation() {
     chemin3.style.transform = 'translate(-850px, 0)';
     chemin4.style.transform = 'translate(850px, 0)';
     chemin5.style.transform = 'translate(0, 450px)';
-    chemin6.style.transform = 'translate(0, 650px)';
+    // chemin6.style.transform = 'translate(0, 650px)';
    
 
     // Définition des transitions
@@ -21,7 +21,7 @@ function lancerAnimation() {
     chemin3.style.transition = 'transform 0.3s ease, opacity 1s ease';
     chemin4.style.transition = 'transform 0.3s ease, opacity 1s ease';
     chemin5.style.transition = 'transform 0.3s ease,opacity 1s ease';
-    chemin6.style.transition = 'transform 0.3s ease,opacity 1s ease';
+    // chemin6.style.transition = 'transform 0.3s ease,opacity 1s ease';
 
     // Démarrage de l'animation après un délai de 5 secondes
     setTimeout(function() {
@@ -35,11 +35,12 @@ function lancerAnimation() {
             chemin3.style.opacity = '1';
             chemin4.style.transform = 'translate(0, 0)';
             chemin4.style.opacity = '1';
-            setTimeout(function() {
-                chemin5.style.transform = 'translate(0, 0)';
+            chemin5.style.transform = 'translate(0, 0)';
                 chemin5.style.opacity = '1';
-                chemin6.style.transform = 'translate(0, 0)';
-                chemin6.style.opacity = '1';
+            setTimeout(function() {
+                
+                // chemin6.style.transform = 'translate(0, 0)';
+                // chemin6.style.opacity = '1';
             }, 1050);
         }, 950);
     }, 500);

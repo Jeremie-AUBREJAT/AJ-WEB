@@ -18,6 +18,7 @@ export default defineConfig({
                 'resources/js/carouselAvis.js',
                 'resources/js/reviewFilter.js',
                 'resources/js/blurcard.js',
+                'resources/js/navChange.js',
             ],
             refresh: true,
         }),
