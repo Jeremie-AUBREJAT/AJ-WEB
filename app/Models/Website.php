@@ -16,6 +16,8 @@ class Website extends Model
         'owner_address',
         'phone_number',
         'email',
+        'description',  // Ajoutez cette ligne
+        'category',     // Ajoutez cette ligne
     ];
 
     public function pictures()

@@ -29,23 +29,46 @@
             Découvrez toutes nos créations web ci-dessous. Chaque site est cliquable et vous redirigera vers sa version en ligne. N'hésitez pas à explorer les projets pour voir mes compétences en action et en savoir plus sur ce que j'ai réalisé.
         </p>
     </div>
-    <div class="flex justify-center space-x-4 my-16">
+    <div id="desktop" class="flex justify-center space-x-4 my-16">
         <!-- Bouton Tous -->
         <button class="filter-button w-32 h-12 bg-sky-700 text-white rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="all">Tous</button>
         
         <!-- Bouton Sites Vitrine -->
-        <button class="filter-button w-32 h-12 bg-sky-700 text-white rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="site-vitrine">Sites Vitrine</button>
+        <button class="filter-button w-32 h-12 bg-sky-700 text-white rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="Site-vitrine">Sites Vitrine</button>
         
         <!-- Bouton E-commerce -->
-        <button class="filter-button w-32 h-12 bg-sky-700 text-white rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="ecommerce">E-commerce</button>
+        <button class="filter-button w-32 h-12 bg-sky-700 text-white rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="E-commerce">E-commerce</button>
+        <button class="filter-button w-32 h-12 bg-sky-700 text-white rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="Blog-forum">Blog-forum</button>
+        <button class="filter-button w-44 h-12 bg-sky-700 text-white text-center rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110" data-filter="En-développement">En-développement</button>
+    </div>
+    <div id="smartphone" class="md:hidden mb-4 w-full flex items-center space-x-2">
+        <!-- Label -->
+        <label for="category-select" class="w-44 h-10 bg-sky-700 text-white text-center rounded-md font-semibold flex items-center justify-center">
+            Filtrer par catégorie:
+        </label>
+        <!-- Select -->
+        <select id="category-select" class="form-select flex-grow rounded-md shadow-md py-2 px-4 border border-gray-300">
+            <option value="all">Tous</option>
+            <option value="Site-vitrine">Sites Vitrine</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Blog-forum">Blog/Forum</option>
+            <option value="En-développement">En Développement</option>
+        </select>
+    </div>
+    
+    
+    
+    <div id="no-results" class="hidden text-lg text-center mx-auto text-gray-700 font-semibold my-20">
+        "Aucun site avec cette catégorie n'a été trouvé."
     </div>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+       
         @foreach ($websites as $website)
-            <div class="relative overflow-hidden rounded-lg card" data-url="{{ $website->url }}">
+        <div class="relative overflow-hidden rounded-lg card" data-category="{{ $website->category }}" data-url="{{ $website->url }}">
                 <!-- Image -->
                 <div class="relative transition duration-300 transform hover:scale-105">
                     <img src="{{ asset($website->pictures->first()->path) }}"
-                        class="w-full h-60 object-cover rounded-lg " alt="Image for {{ $website->name }}" />
+                        class="w-full h-60 object-cover rounded-lg " alt="Image for {{ $website->description, 100 }}" />
                     
                     <!-- Title Overlay -->
                     <div class="absolute inset-x-0 top-0 bg-white bg-opacity-80 p-4 text-center title-overlay">
@@ -65,7 +88,7 @@
                 
                 <!-- Description -->
                 <div class="p-4">
-                    <p class="text-gray-600">{{ Str::limit($website->description, 100) }}</p>
+                    <p class="text-gray-600 text-center">{{ $website->category }}</p>
                 </div>
             </div>
         @endforeach

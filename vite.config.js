@@ -19,6 +19,7 @@ export default defineConfig({
                 'resources/js/reviewFilter.js',
                 'resources/js/blurcard.js',
                 'resources/js/navChange.js',
+                'resources/js/filterWebsite.js',
             ],
             refresh: true,
         }),

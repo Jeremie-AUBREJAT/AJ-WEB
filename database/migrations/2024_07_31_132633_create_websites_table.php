@@ -16,6 +16,8 @@ class CreateWebsitesTable extends Migration
             $table->string('owner_address');
             $table->string('phone_number');
             $table->string('email')->unique();
+            $table->text('description')->nullable(); // Nouvelle colonne description
+            $table->string('category')->nullable();  // Nouvelle colonne category
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/reviewStars.js', 'resources/js/reviewFilter.js', 'resources/js/blurcard.js', 'resources/js/navChange.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/reviewStars.js', 'resources/js/reviewFilter.js', 'resources/js/blurcard.js', 'resources/js/navChange.js', 'resources/js/filterWebsite.js'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJW développeur web freelance</title>
     <link rel="icon" href="{{ asset('images/ajweb.svg') }}" type="image/svg+xml">
@@ -53,8 +53,8 @@
 
             <div
                 class="fixed top-0 left-0 right-0 bg-gradient-to-r from-gray-900 to-gray-700 text-white flex items-center justify-center py-2 shadow-lg z-50">
-                <svg class="mr-4" width="20" height="20" viewBox="0 0 153.10083 127.33417" version="1.1" id="svg1"
-                    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)" sodipodi:docname="ajweb.svg"
+                <svg class="mr-4" width="20" height="20" viewBox="0 0 153.10083 127.33417" version="1.1"
+                    id="svg1" inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)" sodipodi:docname="ajweb.svg"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
                     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -104,6 +104,14 @@
                     class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Créations</a>
                 <a href="/contact"
                     class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Contact</a>
+                @auth
+                    <div class="flex space-x-4 my-4"> <!-- Ajouté espace entre les boutons -->
+                        <a href="/dashboard"
+                            class="inline-block bg-blue-600 text-white font-semibold text-lg py- px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
+                            Tableau de bord
+                        </a>
+                    </div>
+                @endauth
             </div>
         </div>
     </header>
@@ -114,7 +122,8 @@
         <div class="container mx-auto px-4 flex flex-wrap justify-between items-start max-w-screen-lg">
             <!-- Section à gauche (4 SVG verticalement) -->
             <div class="flex flex-col space-y-4 mt-2 mx-auto lg:mx-0">
-                <a target="_blank" href="https://github.com/Jeremie-AUBREJAT" class="flex items-center space-x-2 mx-auto lg:mx-0">
+                <a target="_blank" href="https://github.com/Jeremie-AUBREJAT"
+                    class="flex items-center space-x-2 mx-auto lg:mx-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         style="fill: rgba(255, 255, 255, 1);">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -123,7 +132,8 @@
                     </svg>
                     <span>GITHUB</span>
                 </a>
-                <a target="_blank" href="https://www.facebook.com/" class="flex items-center space-x-2 mx-auto lg:mx-0">
+                <a target="_blank" href="https://www.facebook.com/"
+                    class="flex items-center space-x-2 mx-auto lg:mx-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         style="fill: rgba(255, 255, 255, 1);">
                         <path

@@ -500,7 +500,7 @@
 
                                         <!-- Description -->
                                         <div class="p-4">
-                                            <p class="text-gray-700">{{ Str::limit($website->description, 100) }}
+                                            <p class="text-gray-700 text-center">{{ $website->category }}
                                             </p>
                                         </div>
                                     </div>

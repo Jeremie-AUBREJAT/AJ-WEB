@@ -7,19 +7,7 @@ use Illuminate\Http\Request;
 
 class ReviewController extends Controller
 {
-    // Méthode pour afficher la vue d'accueil avec les derniers avis
-    // public function showHome()
-    // {
-    //     // Récupérer les 5 derniers avis approuvés
-    //     $reviews = Review::where('approved', true)
-    //                       ->latest()
-    //                       ->take(5)
-    //                       ->get();
-
-    //     return view('home', compact('reviews'));
-    // }
-    
-
+    //Methode Front
 public function showallreviews()
 {
     // Récupérer tous les avis approuvés
@@ -61,10 +49,15 @@ public function showallreviews()
     // methode backend
     // Afficher tous les avis pour modération
     public function index()
-    {
-        $reviews = Review::all();
-        return view('reviews.index', compact('reviews'));
-    }
+{
+    // Récupérer tous les avis, triés par statut d'approbation (non approuvés en premier) et date de création (plus récent en premier)
+    $reviews = Review::orderBy('approved', 'asc')  // Trier par statut d'approbation (non approuvés avant approuvés)
+                      ->orderBy('created_at', 'desc') // Trier par date de création décroissante
+                      ->get();
+    
+    // Passer les avis à la vue
+    return view('reviews.index', compact('reviews'));
+}
 
     // Afficher un avis spécifique
     public function show($id)

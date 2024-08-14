@@ -35,20 +35,22 @@ class WebsiteController extends Controller
 
     public function store(Request $request)
 {
-    // Validation des données du formulaire
-    $request->validate([
+    // Valider les données entrantes
+    $validated = $request->validate([
         'name' => 'required|string|max:255',
-        'url' => 'required|url|unique:websites',
+        'url' => 'required|url',
         'owner_name' => 'required|string|max:255',
         'owner_address' => 'required|string|max:255',
         'phone_number' => 'required|string|max:20',
-        'email' => 'required|email|unique:websites',
-        'images.*' => 'mimes:jpg,jpeg|max:2048', // Validation pour les images JPG/JPEG
+        'email' => 'required|email|max:255',
+        'description' => 'nullable|string',
+        'category' => 'nullable|string',
+        'images.*' => 'nullable|image|mimes:jpeg,jpg,png', // Validation des images, incluant PNG
     ]);
 
-    // Création du site web
+    // Créer un nouvel enregistrement pour Website avec les champs valides
     $website = Website::create($request->only([
-        'name', 'url', 'owner_name', 'owner_address', 'phone_number', 'email'
+        'name', 'url', 'owner_name', 'owner_address', 'phone_number', 'email', 'description', 'category'
     ]));
 
     // Traitement des images
@@ -72,8 +74,11 @@ class WebsiteController extends Controller
                 case 'jpg':
                     $sourceImage = imagecreatefromjpeg($image->getRealPath());
                     break;
+                case 'png':
+                    $sourceImage = imagecreatefrompng($image->getRealPath());
+                    break;
                 default:
-                    // Si ce n'est pas JPEG/JPG, continuer à la prochaine image
+                    // Si ce n'est pas JPEG/JPG/PNG, continuer à la prochaine image
                     continue 2;
             }
 
@@ -91,6 +96,15 @@ class WebsiteController extends Controller
 
             // Créer une nouvelle image
             $imageResized = imagecreatetruecolor($resizeWidth, $resizeHeight);
+
+            // Pour les PNG, la transparence doit être gérée
+            if ($image->extension() === 'png') {
+                // Préserver la transparence pour les images PNG
+                imagealphablending($imageResized, false);
+                imagesavealpha($imageResized, true);
+                $transparent = imagecolorallocatealpha($imageResized, 0, 0, 0, 127);
+                imagefill($imageResized, 0, 0, $transparent);
+            }
 
             // Redimensionner l'image
             imagecopyresampled($imageResized, $sourceImage, 0, 0, 0, 0, $resizeWidth, $resizeHeight, $width, $height);
@@ -110,9 +124,10 @@ class WebsiteController extends Controller
         }
     }
 
-    // Rediriger vers une autre page ou afficher un message de succès
-    return redirect()->route('websites.index')->with('success', 'Website created successfully!');
+    // Redirection ou réponse après le stockage
+    return redirect()->route('websites.index')->with('success', 'Site Web créé avec succès.');
 }
+
 
 //afficher la page edit pour la modification
 public function edit($id)
@@ -136,7 +151,9 @@ public function update(Request $request, $id)
         'owner_address' => 'required|string|max:255',
         'phone_number' => 'required|string|max:20',
         'email' => 'required|email|unique:websites,email,' . $id,
-        'images.*' => 'mimes:jpg,jpeg|max:2048', // Validation pour les images JPG/JPEG
+        'description' => 'nullable|string',
+        'category' => 'nullable|string',
+        'images.*' => 'nullable|image|mimes:jpeg,jpg,png|max:2048', // Validation pour les images JPG/JPEG/PNG
     ]);
 
     // Trouver le site web à mettre à jour
@@ -144,7 +161,7 @@ public function update(Request $request, $id)
 
     // Mise à jour des informations du site web
     $website->update($request->only([
-        'name', 'url', 'owner_name', 'owner_address', 'phone_number', 'email'
+        'name', 'url', 'owner_name', 'owner_address', 'phone_number', 'email', 'description', 'category'
     ]));
 
     // Traitement des images
@@ -178,7 +195,11 @@ public function update(Request $request, $id)
                 case 'jpg':
                     $sourceImage = imagecreatefromjpeg($image->getRealPath());
                     break;
+                case 'png':
+                    $sourceImage = imagecreatefrompng($image->getRealPath());
+                    break;
                 default:
+                    // Si ce n'est pas JPEG/JPG/PNG, continuer à la prochaine image
                     continue 2;
             }
 
@@ -197,11 +218,20 @@ public function update(Request $request, $id)
             // Créer une nouvelle image
             $imageResized = imagecreatetruecolor($resizeWidth, $resizeHeight);
 
+            // Pour les PNG, la transparence doit être gérée
+            if ($image->extension() === 'png') {
+                // Préserver la transparence pour les images PNG
+                imagealphablending($imageResized, false);
+                imagesavealpha($imageResized, true);
+                $transparent = imagecolorallocatealpha($imageResized, 0, 0, 0, 127);
+                imagefill($imageResized, 0, 0, $transparent);
+            }
+
             // Redimensionner l'image
             imagecopyresampled($imageResized, $sourceImage, 0, 0, 0, 0, $resizeWidth, $resizeHeight, $width, $height);
 
             // Sauvegarder l'image en WebP
-            imagewebp($imageResized, $filePath, 90);
+            imagewebp($imageResized, $filePath, 90); // Qualité de 90 pour WebP
 
             // Libérer la mémoire
             imagedestroy($sourceImage);
@@ -215,9 +245,10 @@ public function update(Request $request, $id)
         }
     }
 
-    // Rediriger vers une autre page ou afficher un message de succès
-    return redirect()->route('websites.index')->with('success', 'Website updated successfully!');
+    // Redirection ou réponse après la mise à jour
+    return redirect()->route('websites.index')->with('success', 'Site Web mis à jour avec succès.');
 }
+
 
 //Supprimer un website avec ses photos
 public function destroy($id)
