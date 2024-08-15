@@ -20,6 +20,7 @@ export default defineConfig({
                 'resources/js/blurcard.js',
                 'resources/js/navChange.js',
                 'resources/js/filterWebsite.js',
+                'resources/js/validFormMail.js',
             ],
             refresh: true,
         }),

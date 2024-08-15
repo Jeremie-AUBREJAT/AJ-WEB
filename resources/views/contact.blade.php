@@ -27,7 +27,7 @@
 
         <div class="text-sky-700 text-2xl mt-4 font-semibold text-center">CONTACT</div>
 
-        <form action="/contact/send" method="POST" class="max-w-4xl mx-auto my-4 px-4">
+        <form id="contactForm" action="/contact/send" method="POST" class="max-w-4xl mx-auto my-4 px-4">
             @csrf
 
             <!-- Texte descriptif -->
@@ -41,39 +41,46 @@
                 <!-- Informations personnelles -->
                 <div class="mt-4 lg:w-1/2 lg:pr-4 mb-4">
                     <label for="nom" class="block mb-2">Nom :</label>
-                    <input type="text" id="nom" name="nom" placeholder='Entrez votre nom' required
+                    <span id="nomError" class="text-red-500 text-sm"></span>
+                    <input type="text" id="nom" name="nom" required placeholder='Entrez votre nom' 
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 bg-white">
+                        
 
                     <label for="prenom" class="block mb-2">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" placeholder='Entrez votre prénom' required
+                    <span id="prenomError" class="text-red-500 text-sm"></span>
+                    <input type="text" id="prenom" name="prenom" required placeholder='Entrez votre prénom' 
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
 
                     <label for="email" class="block mb-2">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="Entrez votre E-mail" required
+                    <span id="emailError" class="text-red-500 text-sm"></span>
+                    <input type="email" id="email" name="email" required placeholder="Entrez votre E-mail" 
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
                 </div>
 
                 <!-- Informations supplémentaires -->
                 <div class="lg:w-1/2 lg:pl-4 mt-4">
                     <label for="telephone" class="block mb-2">Téléphone :</label>
-                    <input type="tel" id="telephone" name="telephone" placeholder='Entrez votre numéro de téléphone'
-                        required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
+                    <span id="telephoneError" class="text-red-500 text-sm"></span>
+                    <input type="tel" id="telephone" name="telephone" required placeholder='Entrez votre numéro de téléphone'
+                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
 
                     <label for="message" class="block mb-2">Votre message :</label>
-                    <textarea id="message" name="message" placeholder='Entrez votre message' required
+                    <span id="messageError" class="text-red-500 text-sm"></span>
+                    <textarea id="message" name="message" required placeholder='Entrez votre message' 
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4" rows="7"></textarea>
                 </div>
             </div>
 
             <!-- Case à cocher RGPD -->
             <div class="flex items-center mb-4">
-                <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2">
+               
+                <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2 rounded-md">
                 <label for="rgpd" class="text-gray-700">
                     J'accepte les <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
                         target="_blank">Politique de confidentialité</a>.
                 </label>
             </div>
-
+            <span id="rgpdError" class="text-red-500 text-sm"></span>
             <!-- Champ anti-bot (Honeypot) -->
             <div style="display:none;">
                 <label for="honeypot">Si vous êtes un humain, laissez ce champ vide :</label>
