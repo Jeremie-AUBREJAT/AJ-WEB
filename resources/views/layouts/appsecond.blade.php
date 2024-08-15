@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/reviewStars.js', 'resources/js/reviewFilter.js', 'resources/js/blurcard.js', 'resources/js/navChange.js', 'resources/js/filterWebsite.js', 'resources/js/validFormMail.js',])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/reviewStars.js', 'resources/js/reviewFilter.js', 'resources/js/blurcard.js', 'resources/js/navChange.js', 'resources/js/filterWebsite.js', 'resources/js/validFormContact.js',])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJW développeur web freelance</title>
     <link rel="icon" href="{{ asset('images/ajweb.svg') }}" type="image/svg+xml">

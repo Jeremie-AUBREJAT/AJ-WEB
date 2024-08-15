@@ -76,7 +76,7 @@
                
                 <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2 rounded-md">
                 <label for="rgpd" class="text-gray-700">
-                    J'accepte les <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
+                    J'accepte la <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
                         target="_blank">Politique de confidentialité</a>.
                 </label>
             </div>

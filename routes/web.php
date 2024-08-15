@@ -14,6 +14,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'indexHome'])->name('home');
 Route::get('/all-websites', [WebsiteController::class, 'indexFront'])->name('websites.all');
 Route::view('/mentionslegales', 'mentionslegales')->name('mentionslegales');
+Route::view('/à-propos', 'apropos')->name('apropos');
 Route::get('/politique-confidentialite', function () {
     return view('privacypolicies');
 })->name('politique-confidentialite');

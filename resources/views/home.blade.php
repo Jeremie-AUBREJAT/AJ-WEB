@@ -37,7 +37,10 @@
                             pour un <strong>service de qualité</strong>, axé sur la <strong>satisfaction de vos
                                 besoins</strong> et la réussite de vos projets numériques.
                         </p>
-
+                        <a href="/à-propos"
+                            class="inline-block bg-sky-700 text-white py-2 px-4 mt-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
+                            En détail
+                        </a>
                     </div>
 
                     <!-- Image -->
@@ -65,10 +68,6 @@
                                     d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z"
                                     clip-rule="evenodd" />
                             </svg>
-
-                            {{-- <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">Nos Services</h1>
-                            <p class="text-lg md:text-xl text-gray-600">Découvrez comment nous pouvons vous aider à
-                                atteindre vos objectifs numériques avec nos services spécialisés.</p> --}}
                             <!-- Services Spécifiques -->
                             <div class="mx-4 sm:mx-0 text-center mb-8">
                                 <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">Nos Services Spécifiques</h2>
@@ -105,7 +104,8 @@
                                     </div>
                                 </div>
                                 <p class="text-lg md:text-xl text-gray-700 mt-12">
-                                    Nous proposons également des services de maintenance <strong>sans abonnement</strong>, et vous bénéficiez
+                                    Nous proposons également des services de maintenance <strong>sans abonnement</strong>,
+                                    et vous bénéficiez
                                     de la <strong>pleine propriété de votre site</strong>.
                                 </p>
                                 <div class="my-2 border-t-4 border-orange-400 mx-60"></div>
@@ -212,6 +212,7 @@
                         </div>
 
                     </div>
+                    
                 </div>
                 <!-- Smartphone -->
 
@@ -348,7 +349,18 @@
                         </p>
                     </div>
                 </div>
-
+                <div class="my-8">
+                    <div class="container mx-auto text-center">
+                        <p class="mb-4 text-gray-700 text-xl font-semibold">Vous souhaitez obtenir un devis ou
+                            des informations supplémentaires ?</p>
+                        <div>
+                            <a href="/contact"
+                                class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
+                                Contactez-nous
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
 
 
