@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             `).join('')}
                         </div>
                     </div>
-                    <p class="text-gray-700 text-lg" style="flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <p class="text-gray-700 text-lg review-text" style="flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
                         ${review.review}
                     </p>
+                    <!-- Le lien "Lire plus" est conditionnel en fonction de la taille de l'écran -->
+                    <a href="allreviews" class="text-blue-500 mt-2 block text-center mobile-only">Lire plus</a>
                 </div>
             </div>
         `;
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const recentReviews = reviews.slice(-6).reverse(); // Prendre les 6 derniers avis et inverser l'ordre
         slidesContainer.innerHTML = recentReviews.map(createReviewHTML).join('');
         adjustCardHeights();
+        toggleReadMoreLinks();
     }
 
     // Ajuster la hauteur des cartes pour qu'elles soient toutes égales
@@ -52,6 +55,23 @@ document.addEventListener('DOMContentLoaded', function() {
         slides.forEach(slide => {
             slide.style.height = `${maxHeight}px`;
         });
+
+        // Réduire la hauteur des cartes sur smartphone
+        if (window.innerWidth <= 768) { // Ajustez cette largeur pour définir les smartphones
+            slides.forEach(slide => {
+                slide.style.height = `${maxHeight / 2}px`;
+            });
+        }
+    }
+
+    // Afficher ou masquer les liens "Lire plus" en fonction de la taille de l'écran
+    function toggleReadMoreLinks() {
+        const readMoreLinks = slidesContainer.querySelectorAll('.mobile-only');
+        if (window.innerWidth <= 768) {
+            readMoreLinks.forEach(link => link.style.display = 'block');
+        } else {
+            readMoreLinks.forEach(link => link.style.display = 'none');
+        }
     }
 
     displayRecentReviews();
@@ -98,5 +118,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(function() {
         nextBtn.click();
     }, 6000); // Slide every 6 seconds
-});
 
+    // Réajuster la hauteur des cartes et les liens "Lire plus" au redimensionnement de la fenêtre
+    window.addEventListener('resize', function() {
+        adjustCardHeights();
+        toggleReadMoreLinks();
+    });
+});

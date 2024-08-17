@@ -1,8 +1,32 @@
 @extends('layouts.appsecond')
 
 @section('content')
+<section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
+        <div class="flex justify-center items-center space-x-4">
+            <!-- Premier SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;">
+                <path
+                    d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z">
+                </path>
+            </svg>
+            <!-- Deuxième SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                class="fill-current text-white ml-4 mr-2" style="fill: #ffffff; stroke: #000000; stroke-width: 0.6px;">
+                <path d="m19 12-7-6v5H6v2h6v5z" />
+            </svg>
+            <!-- Troisième SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.4px;">
+                <path
+                    d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2zm-6 11H7v-2h7v2zm3-4H7v-2h10v2z">
+                </path>
+            </svg>
+        </div>
+        <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">LAISSEZ VOTRE AVIS</h1>
+    </section>
 <div class="container mx-auto px-4 py-6 mt-8">
-    <h1 class="text-3xl font-semibold mb-6">Laisser un avis</h1>
+    <h1 class="text-3xl text-sky-700 font-semibold mb-6 ml-2">VOTRE AVIS: </h1>
     
     <form action="{{ route('review.store') }}" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
         @csrf

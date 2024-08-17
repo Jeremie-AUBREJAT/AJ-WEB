@@ -10,7 +10,7 @@
                 <section class="flex flex-col lg:flex-row justify-center items-center py-12 bg-gray-100">
                     <!-- Contenu Textuel -->
                     <div class="w-full lg:w-1/2 px-6 md:px-12 text-center lg:text-left">
-                        <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800 mb-4">
+                        <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-800 mb-4">
                             <span class="text-sky-700">AJ-WEB</span> CONCEPTION ET DEVELOPPEMENT DE SITE INTERNET DANS LE
                             CHER
                         </h1>
@@ -83,6 +83,10 @@
                                             Des sites élégants et informatifs pour présenter votre activité en ligne,
                                             optimisés pour une navigation fluide et efficace.
                                         </p>
+                                        <a href="/site-vitrine"
+                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                        En savoir plus
+                                    </a>
                                     </div>
                                     <!-- Service 2 -->
                                     <div class="p-4 md:w-1/3 border-l border-sky-700 md:border-l-2 last:border-r-0">
@@ -101,6 +105,10 @@
                                             Des solutions e-commerce sur mesure pour gérer vos ventes en ligne avec
                                             efficacité, adaptées à vos besoins spécifiques.
                                         </p>
+                                        <a href="/site-Ecommerce"
+                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                        En savoir plus
+                                    </a>
                                     </div>
                                 </div>
                                 <p class="text-lg md:text-xl text-gray-700 mt-12">
@@ -234,7 +242,7 @@
                             <div class="mx-4 sm:mx-0 text-center mb-8">
                                 <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">Nos Services Spécifiques</h2>
                                 <p class="text-lg md:text-xl text-gray-700 mb-6">
-                                    Nous vous proposons des services adaptés à vos besoins :
+                                    Nous vous proposons des services adaptés à vos besoins.
                                 </p>
                                 <div class="flex flex-col md:flex-row justify-center gap-8 mt-12">
                                     <!-- Service 1 -->
@@ -245,6 +253,10 @@
                                             Des sites élégants et informatifs pour présenter votre activité en ligne,
                                             optimisés pour une navigation fluide et efficace.
                                         </p>
+                                        <a href="/site-vitrine"
+                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                        En savoir plus
+                                    </a>
                                     </div>
                                     <!-- Service 2 -->
                                     <div class="p-4 md:w-1/3 border-t border-sky-700 md:border-t-2 last:border-b-0">
@@ -264,6 +276,10 @@
                                             Des solutions e-commerce sur mesure pour gérer vos ventes en ligne avec
                                             efficacité, adaptées à vos besoins spécifiques.
                                         </p>
+                                        <a href="/site-Ecommerce"
+                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                        En savoir plus
+                                    </a>
                                     </div>
                                 </div>
                                 <p class="text-lg md:text-xl text-gray-700 mt-12">
@@ -496,7 +512,7 @@
                                             </div>
 
                                             <!-- Button SVG -->
-                                            <a href="{{ $website->url }}"
+                                            <a href="{{ $website->url }}" target="_blank" rel="noopener noreferrer"
                                                 class="absolute bottom-4 left-1/2 transform -translate-x-1/2 inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" class="fill-white">
@@ -520,7 +536,7 @@
                             </div>
                             <!-- Bouton pour voir tous les sites web -->
                             <div class="text-center my-8">
-                                <a href="{{ route('websites.all') }}"
+                                <a href="/créations-web"
                                     class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                     Toutes les Créations
                                 </a>

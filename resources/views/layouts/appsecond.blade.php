@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/reviewStars.js', 'resources/js/reviewFilter.js', 'resources/js/blurcard.js', 'resources/js/navChange.js', 'resources/js/filterWebsite.js', 'resources/js/validFormContact.js',])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/reviewStars.js', 'resources/js/reviewFilter.js', 'resources/js/blurcard.js', 
+    'resources/js/navChange.js', 'resources/js/filterWebsite.js', 'resources/js/validFormContact.js', 'resources/js/scrollPictures.js',])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJW développeur web freelance</title>
     <link rel="icon" href="{{ asset('images/ajweb.svg') }}" type="image/svg+xml">
@@ -12,7 +13,7 @@
 <body>
     <header>
         <div id="desknav"
-            class="h-10 flex justify-between items-center top-0 fixed w-full z-20 bg-gradient-to-r from-gray-700 to-gray-900">
+            class="h-16 flex justify-between items-center top-0 fixed w-full z-20 bg-gradient-to-r from-gray-700 to-gray-900">
 
             <div class="flex items-center">
                 <img src="{{ asset('images/ajwebWhite.svg') }}" class="p-6 w-20" alt="Logo">
@@ -31,14 +32,20 @@
                     </a>
                 </div>
             @endauth
-            <nav class="bg-gray-00 text-white py- px-6 flex justify-between items-center shadow-md">
+            <nav class="text-white py- px-6 flex justify-between items-center">
 
                 {{-- <div class="space-x-4"> --}}
                 <a href="/"
                     class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">ACCUEIL</a>
-                <a href="/#services"
-                    class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">SERVICES</a>
-                <a href="/#creations"
+                    <div class="relative inline-block text-left">
+                        <a href="#services"
+                            class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">SERVICES</a>
+                        <div class="dropdown-content absolute hidden bg-gray-800 shadow-lg rounded-lg mt- py-4 w-48 text-ceter">
+                            <a href="/site-vitrine" class="block px-4 py-2 text-lg text-white hover:text-sky-400">Site vitrine</a>
+                            <a href="/site-Ecommerce" class="block px-4 py-2 text-lg text-white hover:text-sky-400">Site E-commerce</a>
+                        </div>
+                    </div>
+                <a href="/créations-web"
                     class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">CRÉATIONS
                     WEB</a>
                 <a href="/contact"
@@ -98,18 +105,29 @@
                 class="hidden absolute bottom-full left-0 right-0 bg-gray-800 flex flex-col items-center border-t border-gray-700">
                 <a href="/"
                     class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Accueil</a>
+                    <div>
+                        <div class="w-screen border-t-2 border-gray-900"></div>
                 <a href="/#services"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services</a>
-                <a href="/#creations"
+                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a>
+                    <a href="/site-vitrine"
+                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site vitrine</a>
+                    <a href="/site-Ecommerce"
+                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site E-commerce</a>
+                    <div class="w-screen border-t-2 border-gray-900"></div>
+                </div>
+                <div>
+                <a href="/créations-web"
                     class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Créations</a>
+                    <div class="w-screen border-t-2 border-gray-900"></div>
                 <a href="/contact"
                     class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Contact</a>
+                </div>
                 @auth
                     <div class="flex space-x-4 my-4"> <!-- Ajouté espace entre les boutons -->
                         <a href="/dashboard"
                             class="inline-block bg-blue-600 text-white font-semibold text-lg py- px-4 rounded-lg shadow hover:bg-blue-800 transition duration-300">
                             Tableau de bord
-                        </a>
+                        </a>s
                     </div>
                 @endauth
             </div>

@@ -21,6 +21,7 @@ export default defineConfig({
                 'resources/js/navChange.js',
                 'resources/js/filterWebsite.js',
                 'resources/js/validFormContact.js',
+                'resources/js/scrollPictures.js',
             ],
             refresh: true,
         }),

@@ -1,7 +1,7 @@
 @extends('layouts.appsecond')
 
 @section('content')
-    <section class="container mx-auto px-4 py-16 bg-gray-50">
+<section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">
             <!-- Premier SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"

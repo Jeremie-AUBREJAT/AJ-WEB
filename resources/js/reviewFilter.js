@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displayReviews(filteredReviews) {
         const sortedReviews = sortReviewsByDate(filteredReviews);
         reviewsContainer.innerHTML = sortedReviews.map(review => `
-            <div class="review-item w-full px-4 mb-4" style="box-sizing: border-box;">
+            <div class="review-item w-full lg:px-4 mb-4" style="box-sizing: border-box;">
                 <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4" style="display: flex; flex-direction: column; height: ${fixedHeight}px; box-sizing: border-box; overflow: auto;">
                     <p class="text-gray-600 text-sm mb-2" style="margin: 0;">Le: ${new Date(review.created_at).toLocaleDateString('fr-FR')}</p>
                     <div class="flex items-center mb-2">   

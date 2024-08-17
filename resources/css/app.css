@@ -23,3 +23,43 @@
   body {
     font-family: 'arialroundedmtbold', sans-serif;
   }
+  .text-shadow-custom {
+    text-shadow:
+      1px 1px 1px rgba(0, 0, 0, 0.4),   /* Ombre légère */
+      -1px -1px 1px rgba(0, 0, 0, 0.4),  /* Ombre légère (direction opposée) */
+      1px -1px 1px rgba(0, 0, 0, 0.4),   /* Ombre légère (direction diagonale) */
+      -1px 1px 1px rgba(0, 0, 0, 0.4),   /* Ombre légère (direction diagonale opposée) */
+      0 0 2px rgba(0, 0, 0, 0.4);        /* Ombre plus prononcée au centre */
+  }
+  .section-background {
+    background-image: url('/public/images/test3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1/2; /* 50% de la hauteur de la fenêtre */
+}
+.image-container {
+  height: 300px; /* Hauteur du conteneur qui affiche seulement la moitié de l'image */
+  overflow: hidden; /* Cache le reste de l'image */
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Optionnel : limiter la largeur du conteneur */
+  margin: 0 auto;
+  border-radius: 10px;
+  /* box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.scrolling-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  transition: transform 0.3s ease-out;
+}
+.relative:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+}

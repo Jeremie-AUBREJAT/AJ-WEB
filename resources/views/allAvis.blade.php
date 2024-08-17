@@ -2,35 +2,45 @@
 
 @section('content')
     <!-- all-reviews.blade.php -->
-    <section class="container mx-auto px-4 py-16 bg-gray-50">
+    <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">
             <!-- Premier SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                style="fill: #0369a1; display: block;">
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;">
                 <path
                     d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z">
                 </path>
             </svg>
             <!-- Deuxième SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                class="fill-current text-sky-700 ml-4 mr-2">
+                class="fill-current text-white ml-4 mr-2" style="fill: #ffffff; stroke: #000000; stroke-width: 0.6px;">
                 <path d="m19 12-7-6v5H6v2h6v5z" />
             </svg>
             <!-- Troisième SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                style="fill: #0369a1; display: block">
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.4px;">
                 <path
                     d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2zm-6 11H7v-2h7v2zm3-4H7v-2h10v2z">
                 </path>
             </svg>
         </div>
-
-
-        <h1 class="text-2xl font-bold mt-4 mx-auto text-sky-700 text-center mb-10">AVIS CLIENTS</h1>
-
+        <h1 class="text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">AVIS CLIENTS</h1>
+    </section>
+    <section class="container mx-auto px-4 py-16 bg-gray-50">
+        <div class="text-center mb-8">
+            <p class="text-gray-700 text-lg my-12 mx-12">
+                Bienvenue sur notre page d'avis clients ! Découvrez les évaluations et commentaires de ceux qui ont utilisé
+                nos services. Utilisez notre système de notation par étoiles pour voir la note moyenne et lire les avis
+                détaillés.
+            </p>
+        </div>
+        <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
         <!-- Filtrage par note d'étoile -->
-        <div class="mb-6 ml-12 flex items-center space-x-2">
-            <label for="ratingFilter" class="text-xl font-semibold text-sky-700">FILTRER PAR NOTE:</label>
+        <div class="mb-6 lg:ml-12 flex items-center space-x-2">
+            <label for="category-select"
+                class="w-44 h-10 bg-sky-700 text-white text-center rounded-md font-semibold flex items-center justify-center">
+                Filtrer par note:
+            </label>
             <select id="ratingFilter" class="bg-gray-100 border border-gray-300 rounded-lg p-2 pl-3 pr-8">
                 <option value="">Toutes les notes</option>
                 <option value="1">1 étoile</option>
@@ -40,9 +50,8 @@
                 <option value="5">5 étoiles</option>
             </select>
         </div>
-
         <!-- Afficher la note moyenne -->
-        <div class="ml-12 mb- flex items-center">
+        <div class="lg:ml-12  items-center">
             <h2 class="text-xl font-semibold mr-2 text-sky-700">NOTE MOYENNE:</h2>
             @php
                 $averageRating = round($averageRating, 1); // Arrondir à une décimale
@@ -56,13 +65,14 @@
                 @endfor
             </div>
         </div>
-        <a href="review/create" class="inline-block bg-sky-700 text-white py-2 px-4 my-4 ml-12 rounded-md hover:bg-sky-900">
+        <a href="review/create"
+            class="inline-block bg-sky-700 text-white py-2 px-4 my-4 lg:ml-12 rounded-md hover:bg-sky-900">
             Laisser un avis
         </a>
         <!-- Avis Container -->
-        <div id="reviewsContainer" class="flex flex-col mx-8">
+        <div id="reviewsContainer" class="flex flex-col lg:mx-8">
             @forelse ($reviews as $review)
-                <div class="review-item w-full px-4 mb-4">
+                <div class="review-item w-full lg:px-4 mb-4">
                     <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4">
                         <p class="text-gray-600 text-sm mb-2">Le:
                             {{ \Carbon\Carbon::parse($review->created_at)->translatedFormat('d F Y') }}</p>
@@ -85,13 +95,10 @@
                 <p class="text-center text-gray-500">Aucun avis disponible pour le moment.</p>
             @endforelse
         </div>
-
     </section>
-
     <script>
         // Passer les avis au JavaScript via un attribut data
         window.reviewsData = @json($reviews);
     </script>
     <script src="{{ asset('js/filter-reviews.js') }}"></script>
-
 @endsection

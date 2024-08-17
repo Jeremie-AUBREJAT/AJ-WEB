@@ -56,25 +56,25 @@ document.addEventListener("DOMContentLoaded", lancerAnimation);
   window.addEventListener('DOMContentLoaded', function () {
     const header = document.getElementById('header');
 
-    function setHeaderBackground() {
-        const orientation = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
-        const imageUrl = orientation === 'portrait' ? 'images/back2 - Copie.png' : 'images/back2.png';
-        header.style.backgroundImage = `url('${imageUrl}')`;
+    // function setHeaderBackground() {
+    //     const orientation = window.matchMedia("(orientation: portrait)").matches ? 'portrait' : 'landscape';
+    //     const imageUrl = orientation === 'portrait' ? 'images/back2 - Copie.png' : 'images/back2.png';
+    //     header.style.backgroundImage = `url('${imageUrl}')`;
         
-        // Rafraîchir la page seulement si l'orientation de l'appareil change
-        if (window.orientationChanged) {
-            window.location.reload();
-            window.orientationChanged = false; // Réinitialiser la variable
-        }
-    }
+    //     // Rafraîchir la page seulement si l'orientation de l'appareil change
+    //     if (window.orientationChanged) {
+    //         window.location.reload();
+    //         window.orientationChanged = false; // Réinitialiser la variable
+    //     }
+    // }
 
-    setHeaderBackground(); // Définir l'image de fond initiale lors du chargement de la page
+    // setHeaderBackground(); // Définir l'image de fond initiale lors du chargement de la page
 
-    // Écouter les changements d'orientation de l'appareil et changer l'image de fond en conséquence
-    window.addEventListener('orientationchange', function () {
-        window.orientationChanged = true; // Indiquer que l'orientation de l'appareil a changé
-        setHeaderBackground();
-    });
+    // // Écouter les changements d'orientation de l'appareil et changer l'image de fond en conséquence
+    // window.addEventListener('orientationchange', function () {
+    //     window.orientationChanged = true; // Indiquer que l'orientation de l'appareil a changé
+    //     setHeaderBackground();
+    // });
 });
 
 
