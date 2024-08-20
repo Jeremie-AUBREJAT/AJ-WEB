@@ -26,16 +26,16 @@
         <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">LAISSEZ VOTRE AVIS</h1>
     </section>
 <div class="container mx-auto px-4 py-6 mt-8">
-    <h1 class="text-3xl text-sky-700 font-semibold mb-6 ml-2">VOTRE AVIS: </h1>
+    <h2 class="text-3xl text-sky-700 font-semibold mb-6 ml-2">VOTRE AVIS: </h2>
     
     <form action="{{ route('review.store') }}" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
         @csrf
 
         <div class="mb-4">
-            <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Nom :</label>
+            <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Prénom :</label>
             <input type="text" id="name" name="name" 
                    class="form-input mt-1 block w-full border border-gray-300 rounded-md shadow-sm" 
-                   required placeholder="Entrez votre nom">
+                   required placeholder="Entrez votre prénom">
         </div>
 
         <div class="mb-4">
@@ -53,7 +53,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="rating" class="block text-gray-700 text-sm font-medium mb-2">Note :</label>
+            <label class="block text-gray-700 text-sm font-medium mb-2">Note :</label>
             <div id="rating" class="flex items-center space-x-1">
                 @for ($i = 1; $i <= 5; $i++)
                     <svg class="star w-8 h-8 cursor-pointer text-gray-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-value="{{ $i }}">
@@ -62,6 +62,21 @@
                 @endfor
             </div>
             <input type="hidden" name="rating" id="rating-input" value="">
+        </div>
+        <!-- Case à cocher RGPD -->
+        <div class="flex items-center mb-4">
+
+            <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2 rounded-md" value="1">
+            <label for="rgpd" class="text-gray-700">
+                J'accepte la <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
+                    target="_blank">Politique de confidentialité</a>.
+            </label>
+        </div>
+        <span id="rgpdError" class="text-red-500 text-sm"></span>
+        <!-- Champ anti-bot (Honeypot) -->
+        <div style="display:none;">
+            <label for="honeypot">Si vous êtes un humain, laissez ce champ vide :</label>
+            <input type="text" id="honeypot" name="honeypot">
         </div>
 
         <div class="flex justify-center">

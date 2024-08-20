@@ -8,17 +8,20 @@ use Illuminate\Http\Request;
 class ReviewController extends Controller
 {
     //Methode Front
-public function showallreviews()
-{
-    // Récupérer tous les avis approuvés
-    $reviews = Review::where('approved', true)->get();
-    
-    // Calculer la moyenne des notes
-    $averageRating = $reviews->avg('rating');
-    
-    // Passer les avis et la note moyenne à la vue
-    return view('allAvis', compact('reviews', 'averageRating'));
-}
+    public function showallreviews()
+    {
+        // Récupérer tous les avis approuvés
+        $reviews = Review::where('approved', true)->get();
+        
+        // Masquer le champ 'email' de chaque avis
+        $reviews->makeHidden('email');
+        
+        // Calculer la moyenne des notes
+        $averageRating = $reviews->avg('rating');
+        
+        // Passer les avis et la note moyenne à la vue
+        return view('allAvis', compact('reviews', 'averageRating'));
+    }
     
     // Affichage du formulaire d'avis
     public function create()
@@ -28,21 +31,34 @@ public function showallreviews()
 
     // Soumettre le formulaire d'avis
     public function store(Request $request)
-    {
-        // Validation des données du formulaire
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email',
-            'review' => 'required|string',
-            'rating' => 'required|integer|min:1|max:5',
-        ]);
-
-        // Création de l'avis
-        Review::create($validated);
-
-        // Redirection avec message de succès
-        return redirect()->back()->with('success', 'Votre avis a été soumis. Il sera visible après validation.');
+{
+    if (!empty($request->input('honeypot'))) {
+        // Champ honeypot rempli, ne pas envoyer l'email
+        return redirect()->back()->with('error', 'Votre soumission semble suspecte. Merci de réessayer.');
     }
+
+    // Vérifier si la case RGPD est cochée
+    if (!$request->input('rgpd')) {
+        // Case RGPD non cochée, ne pas envoyer l'email
+        return redirect()->back()->with('error', 'Vous devez accepter la politique de confidentialité pour envoyer le message.');
+    }
+
+    // Validation des données du formulaire, y compris le consentement RGPD
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email',
+        'review' => 'required|string',
+        'rating' => 'required|integer|min:1|max:5',
+        'rgpd' => 'required|accepted', // Validation du champ RGPD
+    ]);
+
+    // Création de l'avis
+    Review::create($validated);
+
+    // Redirection avec message de succès
+    return redirect()->back()->with('success', 'Votre avis a été soumis. Il sera visible après validation.');
+}
+
 
 
 

@@ -1,7 +1,7 @@
 @extends('layouts.appsecond') <!-- Assurez-vous que le nom de votre layout est correct -->
 
 @section('content')
-<section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
+    <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">
             <!-- Premier SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
@@ -23,7 +23,8 @@
                 </path>
             </svg>
         </div>
-        <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">POLITIQUE DE CONFIDENTIALITÉ</h1>
+        <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">POLITIQUE DE
+            CONFIDENTIALITÉ</h1>
     </section>
     <section class="container mx-auto px-4 py-16 bg-gray-50">
         <!-- Contenu principal -->

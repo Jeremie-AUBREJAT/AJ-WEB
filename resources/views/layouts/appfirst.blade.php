@@ -10,36 +10,6 @@
 </head>
 
 <body>
-<style>#header {
-    position: relative;
-    overflow: hidden; /* Cache les débordements pour un effet de zoom propre */
-}
-
-#header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/test3.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Assure que l'image est derrière le contenu du header */
-    animation: backgroundZoom 20s ease-in-out infinite;
-}
-
-@keyframes backgroundZoom {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05); /* Zoom in */
-    }
-    100% {
-        transform: scale(1);
-    }
-}</style>
     <header id="header" class="h-screen flex items-center justify-center bg-cover bg-center">
         <div id="desknav"
             class="h-16 flex justify-between items-center top-0 fixed w-full z-20 bg-gradient-to-r from-gray-700 to-gray-900">
@@ -50,7 +20,6 @@
                     class="text-3xl text-white px-4 font-bold italic transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">
                     AJ-WEB
                 </a>
-
             </div>
             @auth
                 <div class="flex space-x-4"> <!-- Ajouté espace entre les boutons -->
@@ -61,79 +30,56 @@
                 </div>
             @endauth
             <nav class="bg-gray-00 text-white py- px-6 flex justify-between items-center ">
-
                 {{-- <div class="space-x-4"> --}}
                 <a href="/"
                     class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">ACCUEIL</a>
-                    <div class="relative inline-block text-left">
-                        <a href="#services"
-                            class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">SERVICES</a>
-                        <div class="dropdown-content absolute hidden bg-gray-800 shadow-lg rounded-lg mt- py-4 w-48 text-ceter">
-                            <a href="/site-vitrine" class="block px-4 py-2 text-lg text-white hover:text-sky-400">Site vitrine</a>
-                            <a href="/site-Ecommerce" class="block px-4 py-2 text-lg text-white hover:text-sky-400">Site E-commerce</a>
-                        </div>
+                <div class="relative inline-block text-left">
+                    <a href="#services"
+                        class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">SERVICES</a>
+                    <div
+                        class="dropdown-content absolute hidden bg-gray-800 shadow-lg rounded-lg mt- py-4 w-48 text-ceter">
+                        <a href="/site-vitrine" class="block px-4 py-2 text-lg text-white hover:text-sky-400">Site
+                            vitrine</a>
+                        <a href="/site-Ecommerce" class="block px-4 py-2 text-lg text-white hover:text-sky-400">Site
+                            E-commerce</a>
                     </div>
+                </div>
                 <a href="/créations-web"
                     class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">CRÉATIONS
                     WEB</a>
                 <a href="/contact"
                     class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">CONTACT</a>
-
         </div>
         </nav>
         </div>
-
         <div class="h-screen lg:h-full flex flex-col items-center justify-center">
-
             <svg class="w-11/12 mt-40" version="1.1" id="svg1" width="1920" height="1920"
-                viewBox="0 0 1920 1920" sodipodi:docname="logo3.svg"
-                inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg" >
+                viewBox="0 0 1920 1920">
                 <defs id="defs1">
                     <rect x="340.64398" y="427.68549" width="18.267973" height="82.743172" id="rect6" />
                     <rect x="79.519417" y="507.2049" width="629.70776" height="106.38408" id="rect5" />
                     <rect x="122.50288" y="769.40405" width="1031.6031" height="427.68549" id="rect4" />
                     <rect x="204.17146" y="451.32639" width="434.13303" height="251.45328" id="rect2" />
                     <rect x="253.60246" y="498.60822" width="638.3045" height="212.76816" id="rect1" />
-                    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6">
-                        <g inkscape:label="Clip" id="use6">
-                            <text xml:space="preserve" id="text6"
-                                style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:64px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Semi-Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect5);fill:#000000;stroke-width:0.997795"
-                                transform="translate(0,-4.999999)">
-                                <tspan x="79.519531" y="565.75835" id="tspan1">AUBREJAT JEREMY</tspan>
-                            </text>
-                        </g>
-                    </clipPath>
                 </defs>
-                <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
-                    inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
-                    inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="0.46529518" inkscape:cx="1266.9377"
-                    inkscape:cy="731.79353" inkscape:window-width="1920" inkscape:window-height="1001"
-                    inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1"
-                    inkscape:current-layer="g1" showguides="true">
-                    <sodipodi:guide position="130.69377,1224.5388" orientation="0,-1" id="guide1"
-                        inkscape:locked="false" />
-                </sodipodi:namedview>
-                <g inkscape:groupmode="layer" inkscape:label="Image" id="g1">
+
+                <g id="g1">
                     <g transform="matrix(2.8405871,0,0,2.8033497,983.75025,907.698)" id="g4">
                         <path
                             d="m -12.081,-93.258 -65.542,140.55 a 2.9466,2.9466 57.5 0 0 2.6706,4.1919 h 19.47 a 4.6613,4.6613 147.5 0 0 4.2246,-2.6914 l 9.516,-20.407 a 2.5157,2.5157 147.5 0 1 2.28,-1.4525 h 36.317 A 3.9714,3.9714 122.5 0 0 0.4545,21.2833 L -7.4439,4.3453 a 3.4,3.4 32.5 0 0 -3.0815,-1.9631 h -16.93 a 1.3763,1.3763 57.5 0 1 -1.2474,-1.958 l 32.986,-70.738 a 4.5187,4.5187 90 0 0 -3e-7,-3.8194 l -8.9203,-19.13 a 4.1063,4.1063 -180 0 0 -7.4431997,10e-7 z"
-                            style="opacity:0;fill:#ffffff" id="path2" inkscape:label="path4" />
+                            style="opacity:0;fill:#ffffff" id="path2" />
                         <path
                             d="m 12.516,-42.382 -9.4169,20.195 a 4.2157,4.2157 90 0 0 -3e-7,3.5633 L 21.7931,21.4663 A 21.104,21.104 122.5 0 1 2.6660997,51.4893 h -7.7809 a 3.2454,3.2454 135 0 0 -3.2454,3.2454 v 18.06 a 3.2454,3.2454 45 0 0 3.2454,3.2454 h 8.7523 A 45.021,45.021 122.5 0 0 44.4405,11.9921 l -25.355,-54.374 a 3.6242,3.6242 9.1112e-6 0 0 -6.5694,-10e-7 z"
-                            style="opacity:0;fill:#ffffff" id="path1" inkscape:label="path3" />
+                            style="opacity:0;fill:#ffffff" id="path1" />
                         <path
                             d="m 35.442,-46.262 7.7456,16.611 a 4.2751,4.2751 40.051 0 0 2.7608,2.3207 l 20.07,5.4157 a 1.5628,1.5628 80.417 0 1 0.4728,2.8003 l -12.127,8.2626 a 2.6032,2.6032 105.37 0 0 -0.89353,3.2514 l 7.7826,16.69 a 1.4774,1.4774 12.201 0 0 2.3004,0.4974 l 26.394,-22.621 a 10.154,10.154 78.99 0 0 -3.3725,-17.335 l -50.244,-16.888 a 0.72611,0.72611 131.79 0 0 -0.88942,0.99513 z"
-                            style="opacity:0;fill:#ffffff" id="path4" inkscape:label="path2" />
+                            style="opacity:0;fill:#ffffff" id="path4" />
                         <path
                             d="m -52.161,-46.262 -7.7456,16.611 a 4.2751,4.2751 139.95 0 1 -2.7608,2.3207 l -20.07,5.4157 a 1.5628,1.5628 99.583 0 0 -0.4728,2.8003 l 12.127,8.2626 a 2.6032,2.6032 74.634 0 1 0.89353,3.2514 l -7.7826,16.69 a 1.4774,1.4774 167.8 0 1 -2.3004,0.4974 l -26.394,-22.621 a 10.154,10.154 101.01 0 1 3.3725,-17.335 l 50.244,-16.888 a 0.72611,0.72611 48.211 0 1 0.88942,0.99513 z"
-                            style="opacity:0;fill:#ffffff" id="path3" inkscape:label="path1" />
+                            style="opacity:0;fill:#ffffff" id="path3" />
                     </g>
-                    <g id="g5" transform="matrix(0.49947185,0,0,0.62843793,456.67801,480.68109)"
-                        inkscape:groupmode="layer">
-                        <path style="opacity:0;fill:#ffffff" id="path6" inkscape:label="path5" />
+                    <g id="g5" transform="matrix(0.49947185,0,0,0.62843793,456.67801,480.68109)">
+                        {{-- <path style="opacity:0;fill:#ffffff" id="path6" /> --}}
                     </g>
                     <path style="opacity:0;fill:#ffffff"
                         d="m 755.85663,1116.8717 c -1.96525,-2.001 -1.89941,-4.7111 0.72226,-29.727 1.37933,-13.1619 2.68041,-21.7589 3.51916,-23.2536 1.51038,-2.6914 4.81897,-4.3517 8.672,-4.3517 4.54688,0 4.80116,1.6838 2.72717,18.0589 -1.02259,8.0742 -2.00085,15.5197 -2.17382,16.5454 -0.17297,1.0257 -0.19878,1.8649 -0.0576,1.8649 0.14148,0 4.92906,-7.005 10.63904,-15.5667 12.21365,-18.3135 14.01095,-20.1552 20.20341,-20.7035 4.0627,-0.3598 4.58727,-0.1999 6.03756,1.8397 1.48259,2.085 1.51129,3.2529 0.43112,17.5413 -0.63647,8.4191 -0.95884,15.4903 -0.71643,15.7136 0.24241,0.2234 4.62694,-6.4141 9.74345,-14.75 10.29572,-16.7736 13.55538,-20.5436 17.76262,-20.5436 2.91031,0 5.55105,1.822 5.55105,3.8301 0,1.8029 -1.53359,4.3583 -17.15737,28.5894 -8.00263,12.4113 -15.45559,23.0144 -17.04099,24.2437 -1.93718,1.5021 -3.85025,2.1809 -6.12175,2.1721 -7.09138,-0.027 -7.43128,-1.2425 -5.88538,-21.0456 0.70851,-9.0749 1.15662,-16.8632 0.99589,-17.3075 -0.16065,-0.4442 -5.43645,6.7941 -11.72389,16.0853 -6.28734,9.2912 -11.93625,17.4696 -12.5531,18.1743 -3.61297,4.1282 -10.73043,5.4864 -13.57444,2.5905 z m 73.68087,-0.6156 c -0.7774,-0.7164 -1.41342,-1.9544 -1.41342,-2.7512 0,-1.6641 15.52332,-43.7169 17.69256,-47.9293 2.50519,-4.8648 4.23351,-5.2074 26.27227,-5.2074 16.26853,0 20.00471,0.2176 21.10206,1.2287 1.61572,1.4889 1.04743,3.9373 -1.38589,5.97 -1.54996,1.2949 -3.99857,1.5619 -17.59478,1.9186 l -15.79433,0.4144 -2.4916,6.838 -2.49151,6.838 h 13.69991 c 14.18825,0 15.85863,0.3706 15.85863,3.5188 0,0.8413 -0.99354,2.4451 -2.20781,3.5641 -2.15953,1.99 -2.52111,2.0344 -16.55969,2.0344 h -14.35193 l -2.71504,7.4596 -2.71494,7.4596 h 14.83648 c 8.50714,0 15.57872,0.3661 16.57632,0.858 2.49745,1.2317 2.14558,3.8687 -0.88939,6.6654 l -2.62923,2.4228 h -20.69262 c -17.61214,0 -20.90301,-0.1939 -22.10605,-1.3025 z m 58.53111,0.061 c -0.81366,-0.7498 -1.47934,-2.0152 -1.47934,-2.812 0,-1.664 15.52331,-43.7168 17.69255,-47.9293 2.41857,-4.6965 4.60004,-5.2096 22.06403,-5.1891 17.89854,0.021 21.94532,0.9782 24.06437,5.6924 2.72888,6.0708 -1.12658,14.8217 -8.35792,18.9704 l -3.78026,2.1687 3.16629,2.6751 c 2.81613,2.3791 3.15811,3.1174 3.09173,6.6746 -0.136,7.2922 -6.34572,14.9117 -15.21624,18.6707 -4.11811,1.7451 -5.98405,1.9284 -22.13159,2.1738 -15.41664,0.2343 -17.82018,0.096 -19.11362,-1.0953 z m 36.05809,-9.7967 c 4.9994,-2.4453 7.47833,-9.7292 4.17163,-12.258 -0.94957,-0.7262 -4.71104,-1.2313 -10.68708,-1.4351 l -9.22176,-0.3146 -2.48711,6.9283 c -1.3679,3.8106 -2.69192,7.439 -2.94223,8.0631 -0.7032,1.7532 17.2796,0.9174 21.16655,-0.9837 z m 3.88901,-23.7725 c 3.9482,-1.0107 7.83254,-4.6207 8.55535,-7.9511 0.85593,-3.9436 -1.05885,-4.7825 -11.05649,-4.8438 l -8.60787,-0.053 -2.50438,6.8379 -2.50429,6.838 h 6.45924 c 3.55261,0 7.89891,-0.3731 9.65844,-0.8236 z"
@@ -147,10 +93,9 @@
             <div id="navsmart"
                 class="hidden fixed bottom-0 left-0 right-0 bg-gradient-to-r from-gray-700 to-gray-900 text-white flex flex-col items-center py-2 shadow-lg z-50">
                 <!-- Bouton pour afficher/masquer le menu -->
-
                 <div
                     class="fixed top-0 left-0 right-0 bg-gradient-to-r from-gray-900 to-gray-700 text-white flex items-center justify-center py-2 shadow-lg z-50">
-                    <svg class="mr-4" width="20" height="20" viewBox="0 0 153.10083 127.33417"
+                    {{-- <svg class="mr-4" width="20" height="20" viewBox="0 0 153.10083 127.33417"
                         version="1.1" id="svg1" inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
                         sodipodi:docname="ajweb.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -183,7 +128,7 @@
                                 d="m 51.111324,211.20885 c -0.519972,-0.52943 -0.502552,-1.24647 0.191098,-7.86527 0.364948,-3.48241 0.709192,-5.75704 0.931111,-6.15251 0.399622,-0.7121 1.275019,-1.15139 2.294467,-1.15139 1.203028,0 1.270307,0.44551 0.721564,4.77809 -0.270561,2.1363 -0.529392,4.10625 -0.575157,4.37763 -0.04577,0.27139 -0.05259,0.49343 -0.01524,0.49343 0.03743,0 1.304147,-1.85341 2.814913,-4.11869 3.231528,-4.84545 3.707063,-5.33273 5.345485,-5.47781 1.074923,-0.0952 1.213715,-0.0529 1.597438,0.48676 0.392268,0.55165 0.399862,0.86066 0.114067,4.64113 -0.168399,2.22756 -0.253693,4.09848 -0.189555,4.15756 0.06414,0.0591 1.224211,-1.69706 2.577954,-3.9026 2.724076,-4.43802 3.586528,-5.4355 4.699693,-5.4355 0.77002,0 1.468715,0.48207 1.468715,1.01338 0,0.47702 -0.405762,1.15314 -4.539554,7.56428 -2.117362,3.28383 -4.089291,6.08923 -4.508761,6.41448 -0.512546,0.39743 -1.018712,0.57703 -1.619713,0.5747 -1.876261,-0.007 -1.966193,-0.32874 -1.557174,-5.56831 0.18746,-2.40107 0.306022,-4.46172 0.263496,-4.57928 -0.0425,-0.11753 -1.438394,1.79761 -3.101946,4.2559 -1.663525,2.4583 -3.158133,4.62217 -3.321341,4.80862 -0.955932,1.09225 -2.839093,1.45161 -3.59157,0.6854 z m 19.49473,-0.16287 c -0.205687,-0.18955 -0.373967,-0.51711 -0.373967,-0.72793 0,-0.44029 4.107211,-11.56676 4.681156,-12.68129 0.662832,-1.28714 1.120116,-1.37779 6.951205,-1.37779 4.304382,0 5.292913,0.0576 5.583253,0.32509 0.427493,0.39394 0.277133,1.04175 -0.366683,1.57957 -0.410094,0.3426 -1.057955,0.41325 -4.655286,0.50762 l -4.178916,0.10965 -0.659236,1.80922 -0.659212,1.80922 h 3.624768 c 3.753974,0 4.195929,0.0981 4.195929,0.93102 0,0.22259 -0.262874,0.64693 -0.58415,0.943 -0.571375,0.52652 -0.667043,0.53827 -4.381418,0.53827 h -3.797281 l -0.718354,1.97368 -0.718328,1.97369 h 3.925485 c 2.250847,0 4.12187,0.0969 4.385818,0.22701 0.660784,0.32589 0.567685,1.02359 -0.235318,1.76355 l -0.69565,0.64104 h -5.474923 c -4.659878,0 -5.530588,-0.0513 -5.848892,-0.34462 z m 15.486356,0.0161 c -0.215281,-0.19839 -0.391409,-0.53319 -0.391409,-0.74401 0,-0.44027 4.107209,-11.56674 4.681154,-12.6813 0.639913,-1.24261 1.217094,-1.37837 5.837775,-1.37295 4.73566,0.006 5.80637,0.25882 6.36703,1.50612 0.72202,1.60623 -0.29807,3.92157 -2.21137,5.01925 l -1.000189,0.5738 0.837749,0.70779 c 0.7451,0.62947 0.83558,0.82481 0.81802,1.76599 -0.036,1.92939 -1.678973,3.94538 -4.025965,4.93995 -1.089583,0.46173 -1.58328,0.51023 -5.85565,0.57515 -4.078986,0.062 -4.714922,0.0254 -5.057145,-0.28979 z m 9.54037,-2.59205 c 1.322758,-0.64698 1.978641,-2.57418 1.103743,-3.24326 -0.25124,-0.19214 -1.246462,-0.32578 -2.827623,-0.3797 l -2.439924,-0.0832 -0.658048,1.83311 c -0.361923,1.00822 -0.712237,1.96824 -0.778465,2.13336 -0.186055,0.46387 4.571894,0.24273 5.600317,-0.26027 z m 1.028967,-6.28981 c 1.044628,-0.26741 2.072359,-1.22256 2.263603,-2.10372 0.226465,-1.04341 -0.280154,-1.26537 -2.925363,-1.28159 l -2.277499,-0.014 -0.662617,1.8092 -0.662594,1.80922 h 1.709008 c 0.939961,0 2.08992,-0.0987 2.555462,-0.21791 z"
                                 id="path6" />
                         </g>
-                    </svg>
+                    </svg> --}}
                     <span class="text-lg font-bold">AJ-WEB</span>
                 </div>
                 <button class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white relative z-10"
@@ -194,24 +139,26 @@
                 <div id="menu"
                     class="hidden absolute bottom-full left-0 right-0 bg-gray-800 flex flex-col items-center border-t border-gray-700">
                     <a href="/"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Accueil</a>
+                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Accueil</a>
                     <div>
                         <div class="w-screen border-t-2 border-gray-900"></div>
-                <a href="/#services"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a>
-                    <a href="/site-vitrine"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site vitrine</a>
-                    <a href="/site-Ecommerce"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site E-commerce</a>
-                    <div class="w-screen border-t-2 border-gray-900"></div>
-                </div>
-                <div>
-                <a href="/créations-web"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Créations</a>
-                    <div class="w-screen border-t-2 border-gray-900"></div>
-                <a href="/contact"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Contact</a>
-                </div>
+                        <a href="/#services"
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a>
+                        <a href="/site-vitrine"
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site
+                            vitrine</a>
+                        <a href="/site-Ecommerce"
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site
+                            E-commerce</a>
+                        <div class="w-screen border-t-2 border-gray-900"></div>
+                    </div>
+                    <div>
+                        <a href="/créations-web"
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Créations</a>
+                        <div class="w-screen border-t-2 border-gray-900"></div>
+                        <a href="/contact"
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Contact</a>
+                    </div>
                     @auth
                         <div class="flex space-x-4 my-4"> <!-- Ajouté espace entre les boutons -->
                             <a href="/dashboard"
@@ -272,15 +219,13 @@
                     <span>18240 SAVIGNY-EN-SANCERRE</span>
                 </a>
             </div>
-
-
             <!-- Section à droite -->
             <div class="flex flex-col items-center space-y-4 mx-auto lg:mx-0">
 
                 <a href="/">
                     <img src="{{ asset('images/ajwebWhite.svg') }}" class="w-20 mt-" alt="Logo">
                 </a>
-                <a href="/mentionslegales" class="font-semibold italic text-lg text-white ">
+                <a href="/mentions-légales" class="font-semibold italic text-lg text-white ">
                     Mentions Légales
                 </a>
                 <a href="/politique-confidentialite" class="font-semibold italic text-lg text-white ">
@@ -291,7 +236,5 @@
         </div>
         <div class="italic mx-auto text-lg text-center my-6">&copy; 2024 aj-web.fr Tous droits réservés.</div>
     </footer>
-
 </body>
-
 </html>

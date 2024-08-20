@@ -1,23 +1,23 @@
 @extends('layouts.appsecond')
 
 @section('content')
-<section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
-         <div class="flex justify-center items-center space-x-4">
+    <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
+        <div class="flex justify-center items-center space-x-4">
             <!-- Premier SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-            style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;">
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;">
                 <path
                     d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z">
                 </path>
             </svg>
             <!-- Deuxième SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #ffffff; stroke: #000000; stroke-width: 0.6px;"
-                class="fill-current text-white ml-4 mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.6px;" class="fill-current text-white ml-4 mr-2">
                 <path d="m19 12-7-6v5H6v2h6v5z" />
             </svg>
             <!-- Troisième SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #ffffff; stroke: #000000; stroke-width: 0.4px;"
-                style="fill: #ffffff; display: block;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 0.4px;" style="fill: #ffffff; display: block;">
                 <path
                     d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z">
                 </path>
@@ -26,10 +26,11 @@
         <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">CONTACT</div>
     </section>
     <!-- Texte descriptif -->
-    
-    <section class="container mx-auto px-4 py-16 bg-gray-50">
+
+    <div class="container mx-auto px-4 py-16 bg-gray-50">
         <div class="text-center mb-8">
-            <p class="text-gray-700 text-lg my-12 mx-12">Si vous avez une question, une demande ou tout autre besoin, n'hésitez pas à nous
+            <p class="text-gray-700 text-lg my-12 mx-12">Si vous avez une question, une demande ou tout autre besoin,
+                n'hésitez pas à nous
                 contacter en remplissant le formulaire ci-dessous. Nous reviendrons vers vous dans les plus brefs
                 délais.</p>
         </div>
@@ -37,7 +38,7 @@
 
         <form id="contactForm" action="/contact/send" method="POST" class="max-w-4xl mx-auto my-4 px-4">
             @csrf
-            
+
             <div class="lg:flex lg:justify-between lg:items-start">
                 <!-- Informations personnelles -->
                 <div class="mt-4 lg:w-1/2 lg:pr-4 mb-4">
@@ -95,5 +96,5 @@
                     class="bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">Envoyer</button>
             </div>
         </form>
-    </section>
+    </div>
 @endsection

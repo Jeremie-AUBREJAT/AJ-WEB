@@ -14,6 +14,7 @@ class CreateReviewsTable extends Migration
             $table->string('email');
             $table->text('review');
             $table->integer('rating')->unsigned(); // Note en nombre entier entre 1 et 5
+            $table->boolean('rgpd')->default(false);
             $table->boolean('approved')->default(false); // Champs pour la validation des avis
             $table->timestamps(); // Pour les champs de création et mise à jour
         });

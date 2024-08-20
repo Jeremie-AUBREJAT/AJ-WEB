@@ -50,6 +50,14 @@
                         <span class="text-red-500">Non approuvé</span>
                     @endif
                 </p>
+                <p class="mb-4">
+                    {{-- Afficher un message ou une icône selon le consentement RGPD --}}
+                    @if ($review->rgpd)
+                    <span>politique-confidentialite : acceptée</span> {{-- Ou utiliser une icône verte --}}
+                @else
+                    <span>politique-confidentialite : refusée</span> {{-- Ou utiliser une icône rouge --}}
+                @endif
+                </p>
                 <div class="flex flex-wrap gap-2 mt-auto">
                     <a href="{{ route('review.show', $review->id) }}" class="text-blue-500 hover:text-blue-700">Voir</a>
                     @if (!$review->approved)

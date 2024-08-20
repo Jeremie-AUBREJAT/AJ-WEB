@@ -567,7 +567,7 @@
 
                         <!-- Bouton pour accéder au formulaire d'avis -->
                         <div class="mb-6 ml-12">
-                            <a href="review/create"
+                            <a href="/avis/créer"
                                 class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                 Laisser un avis
                             </a>
@@ -594,7 +594,7 @@
 
                         <!-- Button to view all reviews -->
                         <div class="text-center mt-12">
-                            <a href="allreviews"
+                            <a href="/tous-les-avis"
                                 class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                 Voir tous les avis
                             </a>

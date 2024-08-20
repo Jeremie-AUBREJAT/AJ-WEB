@@ -21,7 +21,7 @@
         </div>
         <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">E-COMMERCE</h1>
     </section>
-    <section class="container mx-auto px-4 py-16 bg-gray-50">
+    <div class="container mx-auto px-4 py-16 bg-gray-50">
         <div class="text-center mb-8">
             <p class="text-gray-700 text-lg my-12 mx-12">
                 Faites passer votre entreprise au niveau supérieur avec notre solution E-commerce complète, conçue pour offrir une expérience de vente en ligne fluide et efficace.
@@ -98,9 +98,6 @@
                 <p class="text-lg md:text-xl my-6">Vous désirez un site vitrine? Visitez les services <strong class="text-2xl">Site vitrine</strong>.</p>
                 <a href="/site-vitrine" class="bg-white text-sky-700 hover:bg-gray-200 font-semibold py-3 px-6 rounded-lg shadow-md">Site vitrine</a>
             </div>
-        </section>
-        
-    </section>
-    
-    
+        </section>    
+    </div>
 @endsection

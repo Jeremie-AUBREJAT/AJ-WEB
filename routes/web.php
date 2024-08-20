@@ -13,7 +13,7 @@ use App\Http\Controllers\HomeController;
 // });
 Route::get('/', [HomeController::class, 'indexHome'])->name('home');
 Route::get('/créations-web', [WebsiteController::class, 'indexFront'])->name('websites.all');
-Route::view('/mentionslegales', 'mentionslegales')->name('mentionslegales');
+Route::view('/mentions-légales', 'mentionslegales')->name('mentionslegales');
 Route::view('/à-propos', 'apropos')->name('apropos');
 Route::view('/site-vitrine', 'sitevitrine')->name('sitevitrine');
 Route::view('/site-Ecommerce', 'ecommerce')->name('ecommerce');
@@ -22,7 +22,7 @@ Route::get('/politique-confidentialite', function () {
 })->name('politique-confidentialite');
 
 // Route::get('/', [ReviewController::class, 'showHome'])->name('home');
-Route::get('/allreviews', [ReviewController::class, 'showallreviews'])->name('home');
+Route::get('/tous-les-avis', [ReviewController::class, 'showallreviews'])->name('home');
 // contact
 Route::get('/contact', function () {
     return view('contact'); // Assure-toi que cette vue existe
@@ -33,7 +33,7 @@ Route::post('/contact/send', [ContactController::class, 'sendContactEmail'])->na
 
 
 // Route pour afficher le formulaire de soumission d'avis en front
-Route::get('/review/create', [ReviewController::class, 'create'])->name('review.create');
+Route::get('/avis/créer', [ReviewController::class, 'create'])->name('review.create');
 // Route pour soumettre un avis en front
 Route::post('/review', [ReviewController::class, 'store'])->name('review.store');
 

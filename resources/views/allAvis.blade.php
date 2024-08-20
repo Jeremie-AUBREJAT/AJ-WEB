@@ -41,7 +41,7 @@
                 class="w-44 h-10 bg-sky-700 text-white text-center rounded-md font-semibold flex items-center justify-center">
                 Filtrer par note:
             </label>
-            <select id="ratingFilter" class="bg-gray-100 border border-gray-300 rounded-lg p-2 pl-3 pr-8">
+            <select id="category-select" class="bg-gray-100 border border-gray-300 rounded-lg p-2 pl-3 pr-8">
                 <option value="">Toutes les notes</option>
                 <option value="1">1 étoile</option>
                 <option value="2">2 étoiles</option>
@@ -65,7 +65,7 @@
                 @endfor
             </div>
         </div>
-        <a href="review/create"
+        <a href="/avis/créer"
             class="inline-block bg-sky-700 text-white py-2 px-4 my-4 lg:ml-12 rounded-md hover:bg-sky-900">
             Laisser un avis
         </a>
@@ -100,5 +100,5 @@
         // Passer les avis au JavaScript via un attribut data
         window.reviewsData = @json($reviews);
     </script>
-    <script src="{{ asset('js/filter-reviews.js') }}"></script>
+    
 @endsection

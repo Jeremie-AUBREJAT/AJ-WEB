@@ -26,7 +26,7 @@
         <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">MENTIONS LÉGALES</h1>
     </section>
 
-    <section class="container mx-auto px-4 py-16 bg-gray-50">
+    <div class="container mx-auto px-4 py-16 bg-gray-50">
         <div class="bg-white shadow-lg rounded-lg p-8 w-full text-gray-700">
             <section id="identification" class="mb-6">
                 <h2 class="text-2xl font-semibold text-sky-700 mb-2">Identification</h2>
@@ -63,5 +63,5 @@
                     consentement explicite.</p>
             </section>
         </div>
-    </section>
+    </div>
 @endsection
