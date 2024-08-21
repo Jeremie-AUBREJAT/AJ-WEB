@@ -1,5 +1,7 @@
 @extends('layouts.appsecond')
+@section('title', 'Laissez un Avis - AJ-Web')
 
+@section('meta-description', "Partagez votre expérience avec AJ-Web en laissant un avis via notre formulaire simple et rapide. Votre retour est précieux pour nous aider à améliorer nos services et à offrir une meilleure expérience à nos clients.")
 @section('content')
 <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">

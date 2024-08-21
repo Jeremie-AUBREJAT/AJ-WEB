@@ -1,5 +1,7 @@
 @extends('layouts.appsecond')
+@section('title', 'Nos Créations Web')
 
+@section('meta-description', 'Découvrez les créations web vitrine et e-commerce d\'AJ-Web, ainsi que nos projets en cours. Explorez nos réalisations avec des liens valides et visitez nos sites pour vous inspirer.')
 @section('content')
     {{-- section sites web --}}
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">

@@ -1,5 +1,7 @@
 @extends('layouts.appsecond')
+@section('title', 'Nos services site-Ecommerce')
 
+@section('meta-description', "Découvrez nos services de création de sites e-commerce : boutique en ligne moderne, paiements sécurisés, optimisation SEO e-commerce, gestion de catalogue, promotions et réductions, et responsive design. Tarifs transparents pour une solution complète et adaptée à vos besoins.")
 @section('content')
     <!-- e-commerce.blade.php -->
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">

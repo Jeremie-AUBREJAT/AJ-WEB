@@ -1,5 +1,7 @@
 @extends('layouts.appsecond') <!-- Assurez-vous que le nom de votre layout est correct -->
+@section('title', 'Politique de Confidentialité - AJ-Web')
 
+@section('meta-description', "Découvrez la politique de confidentialité d'AJ-Web, qui décrit comment nous collectons, utilisons, et protégeons vos données personnelles. Assurez-vous que vos informations sont en sécurité avec nous.")
 @section('content')
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">

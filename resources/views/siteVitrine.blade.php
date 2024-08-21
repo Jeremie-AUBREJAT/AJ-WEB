@@ -1,5 +1,7 @@
 @extends('layouts.appsecond')
+@section('title', 'Nos services site-vitrine')
 
+@section('meta-description', 'Découvrez nos services de création de sites vitrines : design moderne et élégant, responsive, optimisation SEO, accessibilité et conformité RGPD. Profitez de maintenance sans abonnement, propriété totale de votre site, et des tarifs clairs et transparents.')
 @section('content')
     <!-- all-reviews.blade.php -->
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">

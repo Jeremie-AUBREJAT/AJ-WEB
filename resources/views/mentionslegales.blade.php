@@ -1,5 +1,7 @@
 @extends('layouts.appsecond') <!-- Assurez-vous que le nom de votre layout est correct -->
+@section('title', 'Mentions Légales - AJ-Web')
 
+@section('meta-description', "Consultez les mentions légales d'AJ-Web pour connaître les informations légales sur notre entreprise, les conditions d'utilisation de notre site web et les obligations légales en vigueur.")
 @section('content')
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">

@@ -1,5 +1,7 @@
 @extends('layouts.appsecond')
+@section('title', 'Avis Clients - AJ-Web')
 
+@section('meta-description', "Lisez les avis de nos clients satisfaits et découvrez pourquoi AJ-Web est le choix préféré pour la création de sites web vitrine et e-commerce. Découvrez des témoignages authentiques sur notre expertise et nos services.")
 @section('content')
     <!-- all-reviews.blade.php -->
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">

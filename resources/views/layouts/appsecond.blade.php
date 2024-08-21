@@ -6,6 +6,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/navChange.js',  ])
     @if (Request::is('contact*'))
         @vite(['resources/js/validFormContact.js'])
+       
     @endif
     @if (Request::is('avis/créer*'))
         @vite(['resources/js/reviewStars.js',])
@@ -20,7 +21,8 @@
         @vite(['resources/js/scrollPictures.js'])
     @endif
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJW développeur web freelance</title>
+    <title>@yield('title', 'Titre par défaut')</title>
+    <meta name="description" content="@yield('meta-description', 'Description par défaut')">
     <link rel="icon" href="{{ asset('images/ajweb.svg') }}" type="image/svg+xml">
 </head>
 

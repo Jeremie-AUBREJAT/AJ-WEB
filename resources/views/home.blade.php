@@ -5,7 +5,7 @@
     <body class="bg-gradient-to-r from-gray-900 to-gray-700">
 
 
-        <div id="content">
+        <div id="content-inner">
             <div class="mx-2 bg-gray-100 grid grid-cols-1 rounded-sm">
                 <section class="flex flex-col lg:flex-row justify-center items-center py-12 bg-gray-100">
                     <!-- Contenu Textuel -->
@@ -608,22 +608,10 @@
                 </div>
             </div>
         </div>
-        <div class="fixed bottom-0 right-0 mb-4">
+        <div class="fixed bottom-0 right-0 mb-4 hidden lg:block">
             <button class="scroll-to-top-button mr-2 mb-2">
                 <img src="images/fleche.png" alt="bouton-haut-de-page" class="rounded-2xl">
             </button>
-        </div>
-        <!-- navbar smartphone -->
-        {{-- <div id="navsmart" class="hidden">
-            <nav class="fixed bottom-0 w-full z-30 bg-gradient-to-r from-gray-700 to-gray-900 p-4 flex justify-between ">
-                <a href="#competences" class="underline decoration-1 text-gray-200 italic text-xl p-2">Services</a>
-                <a href="#portfolio" class="underline decoration-1 text-gray-200 italic text-xl p-2">Créations
-                    web</a>
-                <a href="#contact" class="underline decoration-1 text-gray-200 italic text-xl p-2">Contact</a>
-
-            </nav>
-        </div> --}}
-
         </div>
     </body>
 @endsection

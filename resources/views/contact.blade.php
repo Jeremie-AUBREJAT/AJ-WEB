@@ -1,5 +1,8 @@
 @extends('layouts.appsecond')
+@section('title', 'Contactez nous')
 
+@section('meta-description', "Contactez-nous via notre formulaire facile à utiliser pour toutes vos demandes. 
+Obtenez des réponses rapides et personnalisées pour vos questions ou projets. Nous sommes là pour vous aider !")
 @section('content')
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">

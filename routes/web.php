@@ -44,7 +44,7 @@ Route::post('/review', [ReviewController::class, 'store'])->name('review.store')
 
 
 
-
+// Route BACK OFFICE
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

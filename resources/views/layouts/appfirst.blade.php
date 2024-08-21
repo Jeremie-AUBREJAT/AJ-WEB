@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     @vite(['resources/css/app.css', 'resources/css/move.css', 'resources/js/app.js', 'resources/js/move.js', 'resources/js/progress.js', 'resources/js/hautPage.js', 'resources/js/svgMove.js', 'resources/js/deskSmart.js', 'resources/js/functionScroll.js', 'resources/js/reviewStars.js', 'resources/js/carouselAvis.js', 'resources/js/blurcard.js', 'resources/js/navChange.js'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJ-WEB développeur web freelance</title>
+    <meta name="description" content="AJ-Web - Création et Développement de Sites Web Vitrine et E-commerce à Savigny-en-Sancerre (18, 58, 45). Découvrez nos solutions personnalisées pour booster votre présence en ligne. Expertise locale et service sur mesure pour tous vos besoins digitaux.">
+    <title>AJ-Web - Création et développement de Sites Web Vitrine et E-Commerce à Savigny-en-Sancerre</title>
     <link rel="icon" href="{{ asset('images/ajweb.svg') }}" type="image/svg+xml">
 </head>
 
 <body>
-    <header id="header" class="h-screen flex items-center justify-center bg-cover bg-center">
+    <header id="header" class="fixed h-screen flex items-center justify-center bg-cover bg-center">
         <div id="desknav"
             class="h-16 flex justify-between items-center top-0 fixed w-full z-20 bg-gradient-to-r from-gray-700 to-gray-900">
 
@@ -171,7 +172,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="content">
         @yield('content')
     </main>
     <footer class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-8">
