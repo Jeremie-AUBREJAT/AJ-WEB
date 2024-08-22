@@ -22,6 +22,7 @@ export default defineConfig({
                 'resources/js/filterWebsite.js',
                 'resources/js/validFormContact.js',
                 'resources/js/scrollPictures.js',
+                'resources/js/formAvis.js',
             ],
             refresh: true,
         }),

@@ -35,7 +35,7 @@
                 pour mettre en valeur vos services et captiver vos visiteurs.
             </p>
             <div class="image-container">
-                <img src="/images/screenshot.jpg" alt="Exemple de site vitrine"
+                <img src="/images/site-vitrine.webp" alt="Exemple de site vitrine"
                     class="scrolling-image mx-auto h-80  rounded-lg">
             </div>
         </div>

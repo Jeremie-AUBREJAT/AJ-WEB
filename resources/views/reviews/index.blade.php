@@ -74,6 +74,11 @@
                     @else
                         <span class="text-gray-500">Déjà approuvé</span>
                     @endif
+                    <form action="{{ route('review.reject', $review->id) }}" method="POST" class="inline">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="text-red-500 hover:text-red-700">Supprimer</button>
+                    </form>
                 </div>
             </div>
         @empty

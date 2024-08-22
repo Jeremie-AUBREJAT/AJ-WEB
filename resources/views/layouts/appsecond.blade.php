@@ -9,7 +9,7 @@
        
     @endif
     @if (Request::is('avis/créer*'))
-        @vite(['resources/js/reviewStars.js',])
+        @vite(['resources/js/reviewStars.js', 'resources/js/formAvis.js'])
     @endif
     @if (Request::is('créations-web*'))
         @vite(['resources/js/filterWebsite.js','resources/js/blurcard.js',])
@@ -106,15 +106,17 @@
                 </svg>
                 <span class="text-lg font-bold">AJ-WEB</span>
             </div>
-            <button class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white relative z-10"
+            <button class="block py-2 px-4 text-center rounded-sm hover:text-white relative z-10"
                 onclick="document.getElementById('menu').classList.toggle('hidden')">
                 ☰ Menu
             </button>
             <!-- Contenu du menu -->
             <div id="menu"
                 class="hidden absolute bottom-full left-0 right-0 bg-gray-800 flex flex-col items-center border-t border-gray-700">
+                <div class="w-screen">
                 <a href="/"
                     class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Accueil</a>
+                </div>
                 <div>
                     <div class="w-screen border-t-2 border-gray-900"></div>
                     <a href="/#services"

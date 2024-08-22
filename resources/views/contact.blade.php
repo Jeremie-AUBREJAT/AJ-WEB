@@ -1,8 +1,9 @@
 @extends('layouts.appsecond')
 @section('title', 'Contactez nous')
 
-@section('meta-description', "Contactez-nous via notre formulaire facile à utiliser pour toutes vos demandes. 
-Obtenez des réponses rapides et personnalisées pour vos questions ou projets. Nous sommes là pour vous aider !")
+@section('meta-description',
+    "Contactez-nous via notre formulaire facile à utiliser pour toutes vos demandes.
+    Obtenez des réponses rapides et personnalisées pour vos questions ou projets. Nous sommes là pour vous aider !")
 @section('content')
     <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">
@@ -49,17 +50,24 @@ Obtenez des réponses rapides et personnalisées pour vos questions ou projets. 
                     <span id="nomError" class="text-red-500 text-sm"></span>
                     <input type="text" id="nom" name="nom" required placeholder='Entrez votre nom'
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 bg-white">
-
+                    @error('nom')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
 
                     <label for="prenom" class="block mb-2">Prénom :</label>
                     <span id="prenomError" class="text-red-500 text-sm"></span>
                     <input type="text" id="prenom" name="prenom" required placeholder='Entrez votre prénom'
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
-
+                    @error('prenom')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     <label for="email" class="block mb-2">Email :</label>
                     <span id="emailError" class="text-red-500 text-sm"></span>
                     <input type="email" id="email" name="email" required placeholder="Entrez votre E-mail"
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
+                    @error('email')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <!-- Informations supplémentaires -->
@@ -69,11 +77,16 @@ Obtenez des réponses rapides et personnalisées pour vos questions ou projets. 
                     <input type="tel" id="telephone" name="telephone" required
                         placeholder='Entrez votre numéro de téléphone'
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4">
-
+                    @error('telephone')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     <label for="message" class="block mb-2">Votre message :</label>
                     <span id="messageError" class="text-red-500 text-sm"></span>
-                    <textarea id="message" name="message" required placeholder='Entrez votre message'
+                    <textarea id="message" name="message" required placeholder='Entrez votre message (500 caractères maximum)'
                         class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4" rows="7"></textarea>
+                    @error('message')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                 </div>
             </div>
 
@@ -84,6 +97,9 @@ Obtenez des réponses rapides et personnalisées pour vos questions ou projets. 
                 <label for="rgpd" class="text-gray-700">
                     J'accepte la <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
                         target="_blank">Politique de confidentialité</a>.
+                    @error('rgpd')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                 </label>
             </div>
             <span id="rgpdError" class="text-red-500 text-sm"></span>

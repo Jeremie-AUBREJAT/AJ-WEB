@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const desktopDiv = document.getElementById('desktop');
         const smartphoneDiv = document.getElementById('smartphone');
 
-        if (window.innerWidth >= 1024) { // Largeur d'écran pour desktop
+        if (window.innerWidth >= 1082) { // Largeur d'écran pour desktop
             desktopDiv.classList.remove('hidden');
             smartphoneDiv.classList.add('hidden');
         } else { // Largeur d'écran pour smartphone et tablette

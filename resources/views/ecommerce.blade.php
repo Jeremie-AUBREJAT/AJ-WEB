@@ -29,7 +29,7 @@
                 Faites passer votre entreprise au niveau supérieur avec notre solution E-commerce complète, conçue pour offrir une expérience de vente en ligne fluide et efficace.
             </p>
             <div class="image-container">
-                <img src="/images/screenshot4.jpg" alt="Exemple de site e-commerce" class="scrolling-image mx-auto h-80  rounded-lg">
+                <img src="/images/site-ecommerce.webp" alt="Exemple de site e-commerce" class="scrolling-image mx-auto h-80  rounded-lg">
             </div>
         </div>
         <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>

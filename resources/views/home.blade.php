@@ -45,7 +45,7 @@
 
                     <!-- Image -->
                     <div class="w-1/3 lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
-                        <img src="images/th.jpg" alt="Description de l'image"
+                        <img src="images/th.webp" alt="Description de l'image"
                             class="w-full max-w-md h-auto object-cover mx-auto rounded-full">
                     </div>
                 </section>
@@ -99,7 +99,7 @@
                                     </div>
                                     <!-- Service 3 -->
                                     <div class="p-4 md:w-1/3 border-l border-sky-700 md:border-l-2 last:border-r-0">
-                                        <h3 class="text-2xl font-semibold text-sky-700 mb-2">Développement de Petits
+                                        <h3 class="text-2xl font-semibold text-sky-700 mb-2">Création de Petits
                                             E-commerce</h3>
                                         <p class="text-lg text-gray-700">
                                             Des solutions e-commerce sur mesure pour gérer vos ventes en ligne avec
@@ -126,13 +126,13 @@
                             <div class="relative rounded-lg overflow-hidden p-4">
                                 <div class="relative block group">
                                     <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out rounded-bl-full group-hover:opacity-70"
-                                        src="images/fond1.png" alt="Fonctionnalité sur Mesure">
+                                        src="images/fond1.webp" alt="Fonctionnalités sur Mesure">
                                     <div
                                         class="absolute inset-0 bg-sky-800 opacity-50 transition-opacity duration-500 ease-in-out group-hover:opacity-90 rounded-bl-full m-4">
                                     </div>
                                     <div
                                         class="absolute top-0 left-0 right-0 p-6 flex flex-col justify-start items-start text-white">
-                                        <h2 class="text-xl font-semibold mb-2 p-4 mx-auto">Fonctionnalité sur Mesure</h2>
+                                        <h2 class="text-xl font-semibold mb-2 p-4 mx-auto">Fonctionnalités sur Mesure</h2>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             style="fill: #ffffff; display: block; margin: auto;" class="size-8">
                                             <path fill-rule="evenodd"
@@ -157,7 +157,7 @@
                             <div class="relative rounded-lg overflow-hidden p-4">
                                 <div class="relative block group">
                                     <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out group-hover:opacity-70"
-                                        src="images/fond2.png" alt="SEO et Performance Web">
+                                        src="images/fond2.webp" alt="SEO et Performance Web">
                                     <div
                                         class="absolute inset-0 bg-sky-800 opacity-80 transition-opacity duration-500 ease-in-out group-hover:opacity-95 m-4">
                                     </div>
@@ -194,7 +194,7 @@
                             <div class="relative rounded-lg overflow-hidden p-4">
                                 <div class="relative block group">
                                     <img class="w-full sm:h-1/3 p-2 sm:p-4 filter blur-none transition-all duration-500 ease-in-out rounded-br-full group-hover:opacity-70"
-                                        src="images/fond3.png" alt="Sites Web Responsive">
+                                        src="images/fond3.webp" alt="Sites Web Responsive">
                                     <div
                                         class="absolute inset-0 bg-sky-800 opacity-50 transition-opacity duration-500 ease-in-out group-hover:opacity-90 rounded-br-full m-4">
                                     </div>
@@ -246,7 +246,7 @@
                                 </p>
                                 <div class="flex flex-col md:flex-row justify-center gap-8 mt-12">
                                     <!-- Service 1 -->
-                                    <div class="p-4 md:w-1/3 border-t border-gray-200 md:border-t-2 last:border-b-0">
+                                    <div class="p-4 md:w-1/3 border-t border-sky-700 md:border-t-2 last:border-b-0">
                                         <h3 class="text-2xl font-semibold text-sky-700 mb-2">Création de Sites Vitrines
                                         </h3>
                                         <p class="text-lg text-gray-700">
@@ -254,7 +254,7 @@
                                             optimisés pour une navigation fluide et efficace.
                                         </p>
                                         <a href="/site-vitrine"
-                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                        class="inline-block mt-4 md:mt-12 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
                                         En savoir plus
                                     </a>
                                     </div>
@@ -270,7 +270,7 @@
                                     </div>
                                     <!-- Service 3 -->
                                     <div class="p-4 md:w-1/3 border-t border-sky-700 md:border-t-2 last:border-b-0">
-                                        <h3 class="text-2xl font-semibold text-sky-700 mb-2">Développement de Petits
+                                        <h3 class="text-2xl font-semibold text-sky-700 mb-2">Création de Petits
                                             E-commerce</h3>
                                         <p class="text-lg text-gray-700">
                                             Des solutions e-commerce sur mesure pour gérer vos ventes en ligne avec
@@ -294,12 +294,12 @@
                     <div class="p-2 relative container mx-auto" data-target="p1">
 
                         <div class="relative">
-                            <div class="absolute inset-0 bg-sky-800 opacity-40 z-10"></div>
-                            <img class="w-full opacity-50 z-0" src="images/fondsmart1.png" alt="Fond 1">
-                            <div class="absolute top-0 left-0 right-0 p-2 flex flex-col items-center text-white z-20">
-                                <h2 class="text-xl font-semibold mb-2">Fonctionnalité sur Mesure</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;"
-                                    class="w-8 h-8">
+                            <div class="absolute inset-0 bg-sky-800 opacity-50 z-10"></div>
+                            <img class="w-full z-0" src="images/fondsmart1.webp" alt="image représentant le haut d'un ordinateur portable">
+                            <div class="absolute top-0 left-0 right-0 flex flex-col items-center text-white z-20">
+                                <h2 class="text-xl font-semibold mb-2 text-shadow-custom">Fonctionnalités sur Mesure</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px"
+                                    class="w-6 h-6">
                                     <path fill-rule="evenodd"
                                         d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                                         clip-rule="evenodd" />
@@ -316,12 +316,12 @@
 
                     <div class="p-2 relative container mx-auto" data-target="p2">
                         <div class="relative">
-                            <div class="absolute inset-0 bg-sky-800 opacity-40 z-10"></div>
-                            <img class="w-full opacity-50 z-0" src="images/fondsmart2.png" alt="Fond 1">
-                            <div class="absolute top-0 left-0 right-0 p-2 flex flex-col items-center text-white z-20">
-                                <h2 class="text-xl font-semibold mb-2">SEO et Performance Web</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;"
-                                    class="w-8 h-8">
+                            <div class="absolute inset-0 bg-sky-800 opacity-50 z-10"></div>
+                            <img class="w-full z-0" src="images/fondsmart2.webp" alt="image représentant le milieu d'un ordinateur portable">
+                            <div class="absolute top-0 left-0 right-0 flex flex-col items-center text-white z-20">
+                                <h2 class="text-xl text-shadow-custom font-bold mb-2">SEO et Performance Web</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px"
+                                    class="w-6 h-6">
                                     <path fill-rule="evenodd"
                                         d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                                         clip-rule="evenodd" />
@@ -344,12 +344,12 @@
 
                     <div class="p-2 relative container mx-auto" data-target="p3">
                         <div class="relative">
-                            <div class="absolute inset-0 bg-sky-800 opacity-40 z-10"></div>
-                            <img class="w-full opacity-50 z-0" src="images/fondsmart3.png" alt="Fond 1">
-                            <div class="absolute top-0 left-0 right-0 p-2 flex flex-col items-center text-white z-20">
-                                <h2 class="text-lg font-semibold mb-2">Développement de Petits E-commerce</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;"
-                                    class="w-8 h-8">
+                            <div class="absolute inset-0 bg-sky-800 opacity-50 z-10"></div>
+                            <img class="w-full z-0" src="images/fondsmart3.webp" alt="image représentant le bas d'un ordinateur portable">
+                            <div class="absolute top-0 left-0 right-0  flex flex-col items-center text-white z-20">
+                                <h2 class="text-xl font-semibold mb-2 text-shadow-custom">Créations de Petits E-commerce</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px"
+                                    class="w-6 h-6">
                                     <path fill-rule="evenodd"
                                         d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                                         clip-rule="evenodd" />
@@ -415,14 +415,14 @@
                                     </div>
                                     <div class="mt-4 flex items-center">
 
-                                        <img src="images/css.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                        <img src="images/css.png" alt="icone css" class="mr-4 w-7 sm:w-10">
                                         <div class="w-full h-3 bg-gray-200 rounded">
                                             <div class="progress-bar  h-3 w-11/12 bg-green-500 rounded"></div>
                                         </div>
                                     </div>
                                     <div class="mt-4 flex items-center">
 
-                                        <img src="images/javascript.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                        <img src="images/javascript.png" alt="icone javascript" class="mr-4 w-7 sm:w-10">
                                         <div class="w-full h-3 bg-gray-200 rounded">
                                             <div class="progress-bar3  h-3 w-11/12 bg-green-500 rounded"></div>
                                         </div>
@@ -435,21 +435,21 @@
                                     <h3 class="text-lg font-semibold italic">DÉVELOPPEMENT BACKEND</h3>
                                     <div class="mt-8 flex items-center">
 
-                                        <img src="images/php.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                        <img src="images/php.png" alt="icone php" class="mr-4 w-7 sm:w-10">
                                         <div class="w-full h-3 bg-gray-200 rounded">
                                             <div class="progress-bar2  h-3 w-1/4 bg-blue-500 rounded"></div>
                                         </div>
                                     </div>
                                     <div class="mt-12 flex items-center">
 
-                                        <img src="images/laravel.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                        <img src="images/laravel.png" alt="icone laravel" class="mr-4 w-7 sm:w-10">
                                         <div class="w-full h-3 bg-gray-200 rounded">
                                             <div class="progress-bar2  h-3 w-11/12 bg-blue-500 rounded"></div>
                                         </div>
                                     </div>
                                     <div class="mt-10 flex items-center">
 
-                                        <img src="images/sql.png" alt="icone html" class="mr-4 w-7 sm:w-10">
+                                        <img src="images/sql.png" alt="icone sql" class="mr-4 w-7 sm:w-10">
                                         <div class="w-full h-3 bg-gray-200 rounded">
                                             <div class="progress-bar2  h-3 w-11/12 bg-blue-500 rounded"></div>
                                         </div>
@@ -608,10 +608,6 @@
                 </div>
             </div>
         </div>
-        <div class="fixed bottom-0 right-0 mb-4 hidden lg:block">
-            <button class="scroll-to-top-button mr-2 mb-2">
-                <img src="images/fleche.png" alt="bouton-haut-de-page" class="rounded-2xl">
-            </button>
-        </div>
+        
     </body>
 @endsection

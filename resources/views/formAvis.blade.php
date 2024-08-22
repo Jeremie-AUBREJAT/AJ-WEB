@@ -29,7 +29,11 @@
     </section>
 <div class="container mx-auto px-4 py-6 mt-8">
     <h2 class="text-3xl text-sky-700 font-semibold mb-6 ml-2">VOTRE AVIS: </h2>
-    
+    @if(session('success'))
+    <div class="alert alert-success bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+        {{ session('success') }}
+    </div>
+@endif
     <form action="{{ route('review.store') }}" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
         @csrf
 
@@ -38,6 +42,9 @@
             <input type="text" id="name" name="name" 
                    class="form-input mt-1 block w-full border border-gray-300 rounded-md shadow-sm" 
                    required placeholder="Entrez votre prénom">
+                   @error('name')
+            <div style="color: red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="mb-4">
@@ -45,6 +52,9 @@
             <input type="email" id="email" name="email" 
                    class="form-input mt-1 block w-full border border-gray-300 rounded-md shadow-sm" 
                    required placeholder="Entrez votre adresse email">
+                   @error('email')
+            <div style="color: red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="mb-4">
@@ -52,6 +62,9 @@
             <textarea id="review" name="review" 
                       class="form-textarea mt-1 block w-full border border-gray-300 rounded-md shadow-sm" 
                       rows="4" required placeholder="Entrez votre avis" maxlength="500"></textarea>
+                      @error('review')
+            <div style="color: red;">{{ $message }}</div>
+        @enderror
         </div>
 
         <div class="mb-4">
@@ -63,6 +76,10 @@
                     </svg>
                 @endfor
             </div>
+            @error('rating')
+            <div style="color: red;">{{ $message }}</div>
+        @enderror
+        <span id="ratingError" class="text-red-500 text-sm"></span>
             <input type="hidden" name="rating" id="rating-input" value="">
         </div>
         <!-- Case à cocher RGPD -->
@@ -72,6 +89,9 @@
             <label for="rgpd" class="text-gray-700">
                 J'accepte la <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
                     target="_blank">Politique de confidentialité</a>.
+                    @error('rgpd')
+            <div style="color: red;">{{ $message }}</div>
+        @enderror
             </label>
         </div>
         <span id="rgpdError" class="text-red-500 text-sm"></span>
@@ -88,11 +108,7 @@
             </button>
         </div>
     </form>
-    @if(session('success'))
-    <div class="alert alert-success bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
-        {{ session('success') }}
-    </div>
-@endif
+   
 
 </div>
 @endsection

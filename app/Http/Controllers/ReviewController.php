@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Review;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreReviewRequest;
 
 class ReviewController extends Controller
 {
@@ -30,35 +31,20 @@ class ReviewController extends Controller
     }
 
     // Soumettre le formulaire d'avis
-    public function store(Request $request)
+    public function store(StoreReviewRequest $request)
 {
+    // Vérifier si le champ honeypot est rempli
     if (!empty($request->input('honeypot'))) {
         // Champ honeypot rempli, ne pas envoyer l'email
         return redirect()->back()->with('error', 'Votre soumission semble suspecte. Merci de réessayer.');
     }
 
-    // Vérifier si la case RGPD est cochée
-    if (!$request->input('rgpd')) {
-        // Case RGPD non cochée, ne pas envoyer l'email
-        return redirect()->back()->with('error', 'Vous devez accepter la politique de confidentialité pour envoyer le message.');
-    }
-
-    // Validation des données du formulaire, y compris le consentement RGPD
-    $validated = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email',
-        'review' => 'required|string',
-        'rating' => 'required|integer|min:1|max:5',
-        'rgpd' => 'required|accepted', // Validation du champ RGPD
-    ]);
-
     // Création de l'avis
-    Review::create($validated);
+    Review::create($request->validated());
 
     // Redirection avec message de succès
     return redirect()->back()->with('success', 'Votre avis a été soumis. Il sera visible après validation.');
 }
-
 
 
 
