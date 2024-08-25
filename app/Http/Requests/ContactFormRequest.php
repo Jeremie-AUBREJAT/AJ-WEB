@@ -17,7 +17,7 @@ class ContactFormRequest extends FormRequest
             'nom' => 'required|string|min:2|max:50',
             'prenom' => 'required|string|min:2|max:50',
             'email' => 'required|email',
-            'telephone' => 'required|string|size:10',
+            'telephone' => 'required|digits:10',
             'message' => 'required|string|min:10|max:500',
             'rgpd' => 'required|accepted',
             'honeypot' => 'nullable|string'
@@ -37,6 +37,7 @@ class ContactFormRequest extends FormRequest
             'email.email' => 'L\'adresse e-mail doit être valide.',
             'telephone.required' => 'Le numéro de téléphone est requis.',
             'telephone.size' => 'Le numéro de téléphone doit comporter exactement 10 caractères.',
+            'telephone.digits' => 'Le numéro de téléphone ne doit comporter que des chiffres',
             'message.required' => 'Le message est requis.',
             'message.min' => 'Le message doit comporter au moins 10 caractères.',
             'message.max' => 'Le message doit comporter au maximum 500 caractères.',

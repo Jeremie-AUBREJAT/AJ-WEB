@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    @vite(['resources/js/hautPage.js'])
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/navChange.js',  ])
     @if (Request::is('contact*'))
         @vite(['resources/js/validFormContact.js'])
@@ -76,7 +77,11 @@
         <div id="navsmart"
             class="hidden fixed bottom-0 left-0 right-0 bg-gradient-to-r from-gray-700 to-gray-900 text-white flex flex-col items-center py-2 shadow-lg z-50">
             <!-- Bouton pour afficher/masquer le menu -->
-
+            <div class="fixed bottom-0 right-2 mb-16  lg:hidden z-0">
+                <button class="scroll-to-top-button mr-2 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: #0284c7;transform: ;msFilter:;"><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-15 5 5h-4v5h-2v-5H7l5-5z"></path></svg>
+                </button>
+            </div>
             <div
                 class="fixed top-0 left-0 right-0 bg-gradient-to-r from-gray-900 to-gray-700 text-white flex items-center justify-center py-2 shadow-lg z-50">
                 <svg class="mr-4" width="20" height="20" viewBox="0 0 153.10083 127.33417" version="1.1"
@@ -119,13 +124,14 @@
                 </div>
                 <div>
                     <div class="w-screen border-t-2 border-gray-900"></div>
-                    <a href="/#services"
-                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a>
+                    {{-- <a href="/#services"
+                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a> --}}
                     <a href="/site-vitrine"
-                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site
+                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services site
                         vitrine</a>
+                        <div class="w-screen border-t-2 border-gray-900"></div>
                     <a href="/site-Ecommerce"
-                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site
+                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services site
                         E-commerce</a>
                     <div class="w-screen border-t-2 border-gray-900"></div>
                 </div>
@@ -213,6 +219,11 @@
 
         </div>
         <div class="italic mx-auto text-lg text-center my-6">&copy; 2024 aj-web.fr Tous droits réservés.</div>
+        <div class="fixed bottom-0 right-4 mb-4 hidden lg:block z-0">
+            <button class="scroll-to-top-button mr-2 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #0284c7;transform: ;msFilter:;"><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-15 5 5h-4v5h-2v-5H7l5-5z"></path></svg>
+            </button>
+        </div>
     </footer>
 
 </body>

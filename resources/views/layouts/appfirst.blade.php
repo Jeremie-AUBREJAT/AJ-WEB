@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    @vite(['resources/css/app.css', 'resources/css/move.css', 'resources/js/app.js', 'resources/js/progress.js', 'resources/js/hautPage.js', 'resources/js/svgMove.js', 'resources/js/deskSmart.js', 'resources/js/functionScroll.js', 'resources/js/reviewStars.js', 'resources/js/carouselAvis.js', 'resources/js/blurcard.js', 'resources/js/navChange.js'])
+    @vite(['resources/css/app.css', 'resources/css/move.css', 'resources/js/app.js', 'resources/js/progress.js', 'resources/js/hautPage.js', 'resources/js/svgMove.js', 'resources/js/deskSmart.js', 'resources/js/reviewStars.js', 'resources/js/carouselAvis.js', 'resources/js/blurcard.js', 'resources/js/navChange.js'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AJ-Web - Création et Développement de Sites Web Vitrine et E-commerce à Savigny-en-Sancerre (18, 58, 45). Découvrez nos solutions personnalisées pour booster votre présence en ligne. Expertise locale et service sur mesure pour tous vos besoins digitaux.">
+    <meta name="description" content="AJ-Web - Création et Développement de Sites internet, site Web Vitrine et E-commerce à Savigny-en-Sancerre (Cher 18, Nièvre 58, Loiret 45, Cosne-sur-Loire, Bourges, Nevers, Gien, Sancerre, France). Découvrez nos solutions personnalisées pour booster votre présence en ligne. Expertise locale et service sur mesure pour tous vos besoins digitaux.">
     <title>AJ-Web - Création et développement de Sites Web Vitrine et E-Commerce à Savigny-en-Sancerre</title>
     <link rel="icon" href="{{ asset('images/ajweb.svg') }}" type="image/svg+xml">
 </head>
@@ -143,13 +143,14 @@
                         </div>
                     <div>
                         <div class="w-screen border-t-2 border-gray-900"></div>
-                        <a href="/#services"
-                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a>
+                        {{-- <a href="/#services"
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services:</a> --}}
                         <a href="/site-vitrine"
-                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services site
                             vitrine</a>
+                            <div class="w-screen border-t-2 border-gray-900"></div>
                         <a href="/site-Ecommerce"
-                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Site
+                            class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services site
                             E-commerce</a>
                         <div class="w-screen border-t-2 border-gray-900"></div>
                     </div>

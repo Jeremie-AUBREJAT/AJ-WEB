@@ -11,8 +11,6 @@
     <p><strong>Téléphone :</strong> {{ $telephone }}</p>
     <p><strong>Email :</strong> {{ $email }}</p>
     <p><strong>Message :</strong> {{ $userMessage }}</p>
-    <p><strong>Politique de confidentialité :</strong> 
-        {{ $rgpd === 'on' ? 'Acceptée' : 'Non acceptée' }}
-    </p>
+    <p><strong>Politique de confidentialité :</strong> {{ $rgpd }}</p>
 </body>
 </html>

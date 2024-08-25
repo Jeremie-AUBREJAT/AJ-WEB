@@ -33,13 +33,23 @@
 
     <div class="container mx-auto px-4 py-16 bg-gray-50">
         <div class="text-center mb-8">
+            @if(session('success'))
+            <div class="alert alert-success bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+                {{ session('success') }}
+            </div>
+        @endif
+        
+        @if(session('error'))
+            <div class="alert alert-danger bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+                {{ session('error') }}
+            </div>
+        @endif
             <p class="text-gray-700 text-lg my-12 mx-12">Si vous avez une question, une demande ou tout autre besoin,
                 n'hésitez pas à nous
                 contacter en remplissant le formulaire ci-dessous. Nous reviendrons vers vous dans les plus brefs
                 délais.</p>
         </div>
         <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
-
         <form id="contactForm" action="/contact/send" method="POST" class="max-w-4xl mx-auto my-4 px-4">
             @csrf
 
@@ -93,7 +103,7 @@
             <!-- Case à cocher RGPD -->
             <div class="flex items-center mb-4">
 
-                <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2 rounded-md">
+                <input type="checkbox" id="rgpd" name="rgpd" required class="mr-2 rounded-md" value="on">
                 <label for="rgpd" class="text-gray-700">
                     J'accepte la <a href="/politique-confidentialite" class="text-blue-600 hover:underline"
                         target="_blank">Politique de confidentialité</a>.

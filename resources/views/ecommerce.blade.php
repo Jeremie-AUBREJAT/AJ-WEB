@@ -91,7 +91,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Prêt à lancer votre boutique en ligne ?</h2>
                 <div class="bg-white shadow-lg rounded-lg p-6 text-center">
                     <h3 class="text-2xl font-semibold text-sky-700 mb-2">Package E-Commerce WordPress</h3>
-                    <p class="text-lg text-gray-700 mb-4">À partir de <strong>1 600 €</strong></p>
+                    <p class="text-lg text-gray-700 mb-4">À partir de <strong>1 000 € HT</strong></p>
                     <p class="text-gray-700 mb-4">Création de petites boutiques en ligne sous WordPress avec WooCommerce. Inclus : Configuration de la boutique, intégration des produits, options de paiement, et gestion des commandes.</p>
                     {{-- <a href="mailto:contact@votreentreprise.com" class="bg-sky-700 text-white hover:bg-sky-800 font-semibold py-3 px-6 rounded-lg shadow-md">Demandez un devis</a> --}}
                 </div>

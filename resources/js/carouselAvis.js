@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${review.review}
                     </p>
                     <!-- Le lien "Lire plus" est conditionnel en fonction de la taille de l'écran -->
-                    <a href="allreviews" class="text-blue-500 mt-2 block text-center mobile-only">Lire plus</a>
+                    <a href="/tous-les-avis" class="text-blue-500 mt-2 block text-center mobile-only">Lire plus</a>
                 </div>
             </div>
         `;

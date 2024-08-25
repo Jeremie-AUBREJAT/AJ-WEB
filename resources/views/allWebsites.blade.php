@@ -90,7 +90,7 @@
                         </div>
                         <!-- Button SVG -->
                         <a href="{{ $website->url }}" target="_blank" rel="noopener noreferrer"
-                            class="absolute bottom-4 left-1/2 transform -translate-x-1/2 inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                            class="absolute bottom-4 left-1/2 transform -translate-x-1/2 inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300" aria-label="Visiter le site web {{ $website->name }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 class="fill-white">
                                 <path

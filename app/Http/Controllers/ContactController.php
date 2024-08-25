@@ -24,11 +24,11 @@ class ContactController extends Controller
             'email' => $request->input('email'),
             'telephone' => $request->input('telephone'),
             'message' => $request->input('message'),
-            'rgpd' => $request->input('rgpd') ? 'Acceptée' : 'Non acceptée'
+            'rgpd' => $request->has('rgpd') ? 'Acceptée' : 'Non acceptée'
         ];
     
         // Envoi de l'email
-        Mail::to(env('CONTACT_EMAIL'))->send(new ContactMail(
+        Mail::to('jeremy.aubrejat@gmail.com')->send(new ContactMail(
             $data['nom'],
             $data['prenom'],
             $data['email'],

@@ -1,23 +1,26 @@
 @extends('layouts.appsecond')
+@section('title', 'A-propos')
 
+@section('meta-description', "Découvrez Jérémie Aubrejat, développeur web freelance passionné, spécialisé dans la création de sites internet modernes et sur mesure. Offrant un service personnalisé, Jérémie s'investit pleinement dans chaque projet pour garantir des solutions innovantes et une expérience utilisateur exceptionnelle. Contactez-le pour réaliser vos idées web.")
 @section('content')
 <section class="container mx-auto px-4 py-16 bg-gray-50 mt-8 section-background">
         <div class="flex justify-center items-center space-x-4">
             <!-- Premier SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                style="fill: #0369a1; display: block;">
+            style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;">
                 <path
                     d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z">
                 </path>
             </svg>
             <!-- Deuxième SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+            style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;"
                 class="fill-current text-sky-700 ml-4 mr-2">
                 <path d="m19 12-7-6v5H6v2h6v5z" />
             </svg>
             <!-- Troisième SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                style="fill: #0369a1;transform: ;msFilter:;">
+            style="fill: #ffffff; stroke: #000000; stroke-width: 0.5px;">
                 <path
                     d="M12 10c1.151 0 2-.848 2-2s-.849-2-2-2c-1.15 0-2 .848-2 2s.85 2 2 2zm0 1c-2.209 0-4 1.612-4 3.6v.386h8V14.6c0-1.988-1.791-3.6-4-3.6z">
                 </path>
@@ -26,7 +29,9 @@
                 </path>
             </svg>
         </div>
-        <h1 class="text-2xl font-bold mt-4 mb-4 mx-auto text-sky-700 text-center">À PROPOS</h1>
+        <h1 class="text-xl lg:text-3xl font-bold mt-4 mx-auto text-white text-center text-shadow-custom">À PROPOS</h1>
+</section>
+<div class="container mx-auto px-4 py-16 bg-gray-50">
         <div class="bg-white shadow-lg rounded-lg p-4 lg:p-8 w-full text-xl text-gray-700">
             <p class="mb-6">Bienvenue sur mon site ! Je suis <strong class="font-semibold">AUBREJAT Jérémie</strong>, développeur web freelance spécialisé dans la création de sites internet modernes et fonctionnels.</p>
             <p class="mb-6">Contrairement à ce que le terme "nous" pourrait laisser penser, je suis en réalité un développeur web indépendant, travaillant seul. Mon objectif est de fournir un service personnalisé et de qualité en me consacrant entièrement à chaque projet. Je tiens à être transparent avec vous : derrière chaque projet, il y a un seul professionnel passionné, prêt à vous aider à réaliser vos idées.</p>
@@ -38,5 +43,5 @@
         </div>
         </div>
 
-    </section>
+   
 @endsection

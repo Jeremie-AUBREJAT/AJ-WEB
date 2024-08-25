@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Validation du champ Email
         const email = document.getElementById('email').value.trim();
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
         if (!email || !emailPattern.test(email)) {
             showError('emailError', 'Veuillez entrer un email valide.');
             isValid = false;
@@ -31,8 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Validation du champ Téléphone
         const telephone = document.getElementById('telephone').value.trim();
-        if (!telephone || telephone.length === 10) {
-            showError('telephoneError', 'Le numéro de téléphone est requis et doit avoir 10 caractères.');
+
+        // Vérifiez si le champ est vide, si sa longueur n'est pas égale à 10, ou s'il contient autre chose que des chiffres
+        if (!/^\d{10}$/.test(telephone)) {
+            showError('telephoneError', 'Le numéro de téléphone est requis et doit contenir exactement 10 chiffres.');
             isValid = false;
         }
 
