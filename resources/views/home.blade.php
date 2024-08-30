@@ -1,8 +1,7 @@
 @extends('layouts.appfirst')
 
 @section('content')
-
-    <body class="bg-gradient-to-r from-gray-900 to-gray-700">
+    <div class="bg-gradient-to-r from-gray-900 to-gray-700">
 
 
         <div id="content-inner">
@@ -10,38 +9,42 @@
                 <section class="flex flex-col lg:flex-row justify-center items-center py-12 bg-gray-100">
                     <!-- Contenu Textuel -->
                     <div class="w-full lg:w-1/2 px-6 md:px-12 text-center lg:text-left">
-                        <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-800 mb-4">
-                            <span class="text-sky-700">AJ-WEB</span> CONCEPTION ET DEVELOPPEMENT DE SITE INTERNET DANS LE
-                            CHER
+                        <h1
+                            class="text-3xl md:text-5xl lg:text-3xl font-bold text-gray-800 mb-4 flex flex-col items-center lg:items-start">
+                            <span class="text-sky-700">AJ-WEB</span>
+                            <span>Création de Sites Internet Professionnels à Savigny-en-Sancerre</span>
                         </h1>
-
                         <p class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">
-                            Chez <strong class="text-sky-700">AJ-WEB</strong>, situé à <strong>Savigny-en-Sancerre</strong>
-                            dans le
-                            département du Cher, nous offrons des services de <strong>développement web sur mesure</strong>.
-                            Nous nous
-                            engageons à créer des <strong>sites web modernes</strong> qui répondent aux <strong>besoins
-                                spécifiques</strong>
-                            de chaque client, avec une <strong>approche centrée sur l'utilisateur</strong>.
+                            Chez <strong class="text-sky-700">AJ-WEB</strong>, basé à <strong>Savigny-en-Sancerre</strong>
+                            dans le Cher (18),
+                            nous sommes spécialisés dans la création de sites web sur mesure. Que vous cherchiez un
+                            développeur web pour créer un <strong>site internet professionnel</strong> ou une agence web
+                            offrant des solutions accessibles et économiques, nous répondons à tous vos besoins.
                         </p>
 
                         <p class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed mt-4">
-                            Tous nos projets sont <strong>optimisés pour le référencement</strong> et conçus en respectant
-                            les normes d'<strong>accessibilité</strong>.
-                            De plus, nous veillons à ce que vos sites soient entièrement <strong>responsive</strong>,
-                            garantissant ainsi
-                            une expérience utilisateur fluide sur tous les appareils, qu'il s'agisse de
-                            <strong>mobiles</strong>, de
-                            <strong>tablettes</strong> ou d'<strong>ordinateurs</strong>. Faites confiance à <strong
-                                class="text-sky-700">AJ-WEB</strong>
-                            pour un <strong>service de qualité</strong>, axé sur la <strong>satisfaction de vos
-                                besoins</strong> et la réussite de vos projets numériques.
+                            Nous proposons des services de développement de <strong>sites vitrines</strong> et
+                            <strong>e-commerce</strong>
+                            adaptés aux besoins spécifiques de chaque client, avec une approche axée sur l'utilisateur.
+                            Tous nos projets sont <strong>optimisés pour le SEO</strong>, respectent les normes
+                            d'accessibilité,
+                            et sont conçus pour être entièrement responsive, garantissant une expérience fluide sur tous les
+                            appareils, qu'il s'agisse de mobiles, de tablettes, ou d'ordinateurs.
+                        </p>
+                        <p class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed mt-4">
+                            Faites confiance à <strong class="text-sky-700">AJ-WEB</strong> pour un service de qualité qui
+                            assure
+                            la réussite de vos projets numériques à <strong>Savigny-en-Sancerre</strong>,
+                            <strong>Sancerre</strong>, <strong>Cosne-sur-loire</strong>,
+                            et au-delà.
                         </p>
                         <a href="/à-propos"
                             class="inline-block bg-sky-700 text-white py-2 px-4 mt-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
-                            En détail
+                            En savoir plus
                         </a>
                     </div>
+
+
 
                     <!-- Image -->
                     <div class="w-1/3 lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
@@ -84,9 +87,9 @@
                                             optimisés pour une navigation fluide et efficace.
                                         </p>
                                         <a href="/site-vitrine"
-                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
-                                        En savoir plus
-                                    </a>
+                                            class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                            En savoir plus
+                                        </a>
                                     </div>
                                     <!-- Service 2 -->
                                     <div class="p-4 md:w-1/3 border-l border-sky-700 md:border-l-2 last:border-r-0">
@@ -106,9 +109,9 @@
                                             efficacité, adaptées à vos besoins spécifiques.
                                         </p>
                                         <a href="/site-Ecommerce"
-                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
-                                        En savoir plus
-                                    </a>
+                                            class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                            En savoir plus
+                                        </a>
                                     </div>
                                 </div>
                                 <p class="text-lg md:text-xl text-gray-700 mt-12">
@@ -220,7 +223,7 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
                 <!-- Smartphone -->
 
@@ -254,9 +257,9 @@
                                             optimisés pour une navigation fluide et efficace.
                                         </p>
                                         <a href="/site-vitrine"
-                                        class="inline-block mt-4 md:mt-12 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
-                                        En savoir plus
-                                    </a>
+                                            class="inline-block mt-4 md:mt-12 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                            En savoir plus
+                                        </a>
                                     </div>
                                     <!-- Service 2 -->
                                     <div class="p-4 md:w-1/3 border-t border-sky-700 md:border-t-2 last:border-b-0">
@@ -277,9 +280,9 @@
                                             efficacité, adaptées à vos besoins spécifiques.
                                         </p>
                                         <a href="/site-Ecommerce"
-                                        class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
-                                        En savoir plus
-                                    </a>
+                                            class="inline-block mt-4 bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-sky-800 transition duration-300">
+                                            En savoir plus
+                                        </a>
                                     </div>
                                 </div>
                                 <p class="text-lg md:text-xl text-gray-700 mt-12">
@@ -295,11 +298,12 @@
 
                         <div class="relative">
                             <div class="absolute inset-0 bg-sky-800 opacity-50 z-10"></div>
-                            <img class="w-full z-0" src="images/fondsmart1.webp" alt="image représentant le haut d'un ordinateur portable">
+                            <img class="w-full z-0" src="images/fondsmart1.webp"
+                                alt="image représentant le haut d'un ordinateur portable">
                             <div class="absolute top-0 left-0 right-0 flex flex-col items-center text-white z-20">
                                 <h2 class="text-xl font-semibold mb-2 text-shadow-custom">Fonctionnalités sur Mesure</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px"
-                                    class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px" class="w-6 h-6">
                                     <path fill-rule="evenodd"
                                         d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                                         clip-rule="evenodd" />
@@ -317,11 +321,12 @@
                     <div class="p-2 relative container mx-auto" data-target="p2">
                         <div class="relative">
                             <div class="absolute inset-0 bg-sky-800 opacity-50 z-10"></div>
-                            <img class="w-full z-0" src="images/fondsmart2.webp" alt="image représentant le milieu d'un ordinateur portable">
+                            <img class="w-full z-0" src="images/fondsmart2.webp"
+                                alt="image représentant le milieu d'un ordinateur portable">
                             <div class="absolute top-0 left-0 right-0 flex flex-col items-center text-white z-20">
                                 <h2 class="text-xl text-shadow-custom font-bold mb-2">SEO et Performance Web</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px"
-                                    class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px" class="w-6 h-6">
                                     <path fill-rule="evenodd"
                                         d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                                         clip-rule="evenodd" />
@@ -345,11 +350,13 @@
                     <div class="p-2 relative container mx-auto" data-target="p3">
                         <div class="relative">
                             <div class="absolute inset-0 bg-sky-800 opacity-50 z-10"></div>
-                            <img class="w-full z-0" src="images/fondsmart3.webp" alt="image représentant le bas d'un ordinateur portable">
+                            <img class="w-full z-0" src="images/fondsmart3.webp"
+                                alt="image représentant le bas d'un ordinateur portable">
                             <div class="absolute top-0 left-0 right-0  flex flex-col items-center text-white z-20">
-                                <h2 class="text-xl font-semibold mb-2 text-shadow-custom">Créations de Petits E-commerce</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px"
-                                    class="w-6 h-6">
+                                <h2 class="text-xl font-semibold mb-2 text-shadow-custom">Créations de Petits E-commerce
+                                </h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    style="fill: #ffffff;stroke: #000000; stroke-width: 0.5px" class="w-6 h-6">
                                     <path fill-rule="evenodd"
                                         d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                                         clip-rule="evenodd" />
@@ -377,15 +384,103 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
+
+                <div id="creations">
+                    <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
+                    {{-- section sites web --}}
+                    <section class="container mx-auto px-4 bg-gray-100">
+                        <div class="container text-center mx-auto mb-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                width="60" height="60" style="display: block; margin: auto; fill: #0369a1;">
+                                <path
+                                    d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
+                            </svg>
+                            <h2 class="text-3xl md:text-4xl font-bold text-sky-700 my-8">
+                                CRÉATIONS WEB
+                            </h2>
+                            <p class="text-lg md:text-xl text-gray-700 my-8">
+                                Explorez notre expertise en création de sites web, qu'il s'agisse de vitrines
+                                professionnelles, de petites boutiques en ligne, ou de solutions personnalisées.
+                                Profitez d’une création sur mesure, sans abonnement, avec la garantie de la
+                                pleine propriété de votre site.
+                            </p>
+
+
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+                            @foreach ($websites as $website)
+                                <div class="relative overflow-hidden card" data-url="{{ $website->url }}">
+                                    <!-- Image -->
+                                    <div class="relative transition duration-300 transform hover:scale-105">
+                                        <a href="{{ $website->url }}" target="_blank"
+                                            aria-label="Visiter le site web {{ $website->name }}">
+                                            <img src="{{ asset($website->pictures->first()->path) }}"
+                                                class="w-full h-60 object-cover "
+                                                alt="Image for {{ $website->name }}" /></a>
+
+                                        <!-- Title Overlay -->
+                                        <div
+                                            class="absolute inset-x-0 top-0 bg-white bg-opacity-80 p-4 text-center title-overlay">
+                                            <h3 class="text-blue-950 text-2xl font-bold">{{ $website->name }}
+                                            </h3>
+                                        </div>
+
+                                        <!-- Button SVG -->
+                                        <a href="{{ $website->url }}" target="_blank" rel="noopener noreferrer"
+                                            class="absolute bottom-4 left-1/2 transform -translate-x-1/2 inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+                                            aria-label="Visiter le site web {{ $website->name }}">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" class="fill-white">
+                                                <path
+                                                    d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z">
+                                                </path>
+                                                <path
+                                                    d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <!-- Description -->
+                                    <div class="p-4">
+                                        <p class="text-gray-700 text-center">{{ $website->category }}
+                                        </p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                        <!-- Bouton pour voir tous les sites web -->
+                        <div class="text-center my-8">
+                            <a href="/créations-web"
+                                class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
+                                Toutes les Créations
+                            </a>
+                        </div>
+                    </section>
+                    <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
+                </div>
+                <!-- Section de contact -->
+                <div class="my-8 mb-16">
+                    <div class="container mx-auto text-center">
+                        <p class="mb-4 text-gray-700 text-xl font-semibold">Vous souhaitez obtenir un devis ou
+                            des informations supplémentaires ?</p>
+                        <div>
+                            <a href="/contact"
+                                class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
+                                Contactez-nous
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:my-12 border-t-4 border-sky-700 lg:mx-40"></div>
 
 
                 <!-- Section de compétences -->
 
 
-                <div id="competences" class="lg:py-16 mx-2 grid grid-cols-1 bg-gray-100 ">
+                <div id="competences" class="lg:py- mx-2 grid grid-cols-1 bg-gray-100 ">
 
-                    <section class="py-16 lg:px-10 bg-gray-100">
+                    <section class="py-8 lg:px-10 bg-gray-100">
                         <div id="Left" class=" container mx-auto text-center">
 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0369a1"
@@ -473,100 +568,20 @@
                             </div>
                         </div>
                     </section>
-                    <div id="creations">
-                        <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
-                        {{-- section sites web --}}
-                        <section class="container mx-auto px-4 py-8 bg-gray-100 mt-8">
-                            <div class="container text-center mx-auto mb-8">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                    width="60" height="60" style="display: block; margin: auto; fill: #0369a1;">
-                                    <path
-                                        d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
-                                </svg>
-                                <h2 class="text-3xl md:text-4xl font-bold text-sky-700 my-8">
-                                    CRÉATIONS WEB
-                                </h2>
-                                <p class="text-lg md:text-xl text-gray-700 my-8">
-                                    Explorez notre expertise en création de sites web, qu'il s'agisse de vitrines
-                                    professionnelles, de petites boutiques en ligne, ou de solutions personnalisées.
-                                    Profitez d’une création sur mesure, sans abonnement, avec la garantie de la
-                                    pleine propriété de votre site.
-                                </p>
-
-
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-                                @foreach ($websites as $website)
-                                    <div class="relative overflow-hidden rounded-lg card" data-url="{{ $website->url }}">
-                                        <!-- Image -->
-                                        <div class="relative transition duration-300 transform hover:scale-105">
-                                            <img src="{{ asset($website->pictures->first()->path) }}"
-                                                class="w-full h-60 object-cover rounded-lg"
-                                                alt="Image for {{ $website->name }}" />
-
-                                            <!-- Title Overlay -->
-                                            <div
-                                                class="absolute inset-x-0 top-0 bg-white bg-opacity-80 p-4 text-center title-overlay">
-                                                <h3 class="text-blue-950 text-2xl font-bold">{{ $website->name }}
-                                                </h3>
-                                            </div>
-
-                                            <!-- Button SVG -->
-                                            <a href="{{ $website->url }}" target="_blank" rel="noopener noreferrer"
-                                                class="absolute bottom-4 left-1/2 transform -translate-x-1/2 inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300" aria-label="Visiter le site web {{ $website->name }}">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" class="fill-white">
-                                                    <path
-                                                        d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z">
-                                                    </path>
-                                                    <path
-                                                        d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-
-                                        <!-- Description -->
-                                        <div class="p-4">
-                                            <p class="text-gray-700 text-center">{{ $website->category }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                            <!-- Bouton pour voir tous les sites web -->
-                            <div class="text-center my-8">
-                                <a href="/créations-web"
-                                    class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
-                                    Toutes les Créations
-                                </a>
-                            </div>
-                        </section>
-                        <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
-                    </div>
-                    <!-- Section de contact -->
-                    <div class="my-8">
-                        <div class="container mx-auto text-center">
-                            <p class="mb-4 text-gray-700 text-xl font-semibold">Vous souhaitez obtenir un devis ou
-                                des informations supplémentaires ?</p>
-                            <div>
-                                <a href="/contact"
-                                    class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
-                                    Contactez-nous
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Pied de page -->
                     {{-- section pour les avis --}}
                     <!-- home.blade.php -->
-                    <div class="my-12 lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
-                    <section class="container mx-auto px-4 py-8 bg-white">
-                        <h1 class="text-2xl font-bold mb-6 ml-12 text-sky-700">Avis Clients les plus récents</h1>
+                    <div class="lg:my-24 border-t-4 border-sky-700 lg:mx-40"></div>
+                    <section class="container mx-auto px-4 py-8 bg-white text-center mt-16">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0369a1" class="mx-auto block w-16 h-16 mb-4">
+                            <path fill-rule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clip-rule="evenodd" />
+                            <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                          </svg>
+                          
+                        <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">Avis Clients</h2>
 
                         <!-- Bouton pour accéder au formulaire d'avis -->
-                        <div class="mb-6 ml-12">
+                        <div class="my-10">
                             <a href="/avis/créer"
                                 class="inline-block bg-sky-700 text-white py-2 px-4 rounded-md hover:bg-sky-900 transition duration-300 transform hover:scale-110">
                                 Laisser un avis
@@ -608,6 +623,6 @@
                 </div>
             </div>
         </div>
-        
-    </body>
+
+    </div>
 @endsection

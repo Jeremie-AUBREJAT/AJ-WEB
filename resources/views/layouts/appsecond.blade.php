@@ -4,21 +4,20 @@
 <head>
     <meta charset="UTF-8">
     @vite(['resources/js/hautPage.js'])
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/navChange.js',  ])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/navChange.js'])
     @if (Request::is('contact*'))
         @vite(['resources/js/validFormContact.js'])
-       
     @endif
     @if (Request::is('avis/créer*'))
         @vite(['resources/js/reviewStars.js', 'resources/js/formAvis.js'])
     @endif
     @if (Request::is('créations-web*'))
-        @vite(['resources/js/filterWebsite.js','resources/js/blurcard.js',])
+        @vite(['resources/js/filterWebsite.js', 'resources/js/blurcard.js'])
     @endif
     @if (Request::is('tous-les-avis*'))
-        @vite(['resources/js/reviewFilter.js',])
+        @vite(['resources/js/reviewFilter.js'])
     @endif
-    @if (Request::is('site-vitrine*','site-Ecommerce*'))
+    @if (Request::is('site-vitrine*', 'site-Ecommerce*'))
         @vite(['resources/js/scrollPictures.js'])
     @endif
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,15 +70,20 @@
                 <a href="/contact"
                     class="text-xl px-4 font-semibold transition-transform duration-300 transform hover:scale-110 hover:text-sky-400">CONTACT</a>
 
-        </div>
-        </nav>
+
+            </nav>
         </div>
         <div id="navsmart"
             class="hidden fixed bottom-0 left-0 right-0 bg-gradient-to-r from-gray-700 to-gray-900 text-white flex flex-col items-center py-2 shadow-lg z-50">
             <!-- Bouton pour afficher/masquer le menu -->
             <div class="fixed bottom-0 right-2 mb-16  lg:hidden z-0">
                 <button class="scroll-to-top-button mr-2 mb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: #0284c7;transform: ;msFilter:;"><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-15 5 5h-4v5h-2v-5H7l5-5z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                        style="fill: #0284c7;transform: ;msFilter:;">
+                        <path
+                            d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-15 5 5h-4v5h-2v-5H7l5-5z">
+                        </path>
+                    </svg>
                 </button>
             </div>
             <div
@@ -87,8 +91,7 @@
                 <svg class="mr-4" width="20" height="20" viewBox="0 0 153.10083 127.33417" version="1.1"
                     id="svg1">
                     <defs id="defs1" />
-                    <g id="layer1"
-                        transform="translate(-28.575002,-84.931247)">
+                    <g id="layer1" transform="translate(-28.575002,-84.931247)">
                         <g transform="matrix(0.75157199,0,0,0.7417196,111.40818,155.86498)" id="g4"
                             style="fill:#ffff">
                             <path
@@ -119,8 +122,8 @@
             <div id="menu"
                 class="hidden absolute bottom-full left-0 right-0 bg-gray-800 flex flex-col items-center border-t border-gray-700">
                 <div class="w-screen">
-                <a href="/"
-                    class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Accueil</a>
+                    <a href="/"
+                        class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Accueil</a>
                 </div>
                 <div>
                     <div class="w-screen border-t-2 border-gray-900"></div>
@@ -129,7 +132,7 @@
                     <a href="/site-vitrine"
                         class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services site
                         vitrine</a>
-                        <div class="w-screen border-t-2 border-gray-900"></div>
+                    <div class="w-screen border-t-2 border-gray-900"></div>
                     <a href="/site-Ecommerce"
                         class="block py-2 px-4 text-center rounded-sm hover:bg-sky-700 hover:text-white">Services site
                         E-commerce</a>
@@ -170,7 +173,7 @@
                     </svg>
                     <span>GITHUB</span>
                 </a>
-                <a target="_blank" href="https://www.facebook.com/"
+                <a target="_blank" href="https://www.facebook.com/people/Aj-web-Cr%C3%A9ation-et-d%C3%A9veloppement-de-sites-web/61564880796347/"
                     class="flex items-center space-x-2 mx-auto lg:mx-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         style="fill: rgba(255, 255, 255, 1);">
@@ -221,7 +224,12 @@
         <div class="italic mx-auto text-lg text-center my-6">&copy; 2024 aj-web.fr Tous droits réservés.</div>
         <div class="fixed bottom-0 right-4 mb-4 hidden lg:block z-0">
             <button class="scroll-to-top-button mr-2 mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #0284c7;transform: ;msFilter:;"><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-15 5 5h-4v5h-2v-5H7l5-5z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                    style="fill: #0284c7;transform: ;msFilter:;">
+                    <path
+                        d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-15 5 5h-4v5h-2v-5H7l5-5z">
+                    </path>
+                </svg>
             </button>
         </div>
     </footer>

@@ -78,12 +78,13 @@
         </div>
         <div class="mt-8 lg:mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ($websites as $website)
-                <div class="relative overflow-hidden rounded-lg card" data-category="{{ $website->category }}"
+                <div class="relative overflow-hidden card" data-category="{{ $website->category }}"
                     data-url="{{ $website->url }}">
                     <!-- Image -->
                     <div class="relative transition duration-300 transform hover:scale-105">
+                        <a href="{{ $website->url }}" target="_blank" aria-label="Visiter le site web {{ $website->name }}">
                         <img src="{{ asset($website->pictures->first()->path) }}"
-                            class="w-full h-60 object-cover rounded-lg " alt="Image for {{ $website->description, 100 }}" />
+                            class="w-full h-60 object-cover" alt="Image for {{ $website->description, 100 }}" /></a>
                         <!-- Title Overlay -->
                         <div class="absolute inset-x-0 top-0 bg-white bg-opacity-80 p-4 text-center title-overlay">
                             <h3 class="text-blue-950 text-2xl font-bold">{{ $website->name }}</h3>

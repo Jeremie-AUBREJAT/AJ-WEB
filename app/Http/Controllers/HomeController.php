@@ -14,7 +14,7 @@ class HomeController extends Controller
     // Récupérer les 4 derniers sites web avec leurs images associées
     $websites = Website::with('pictures')
                         ->latest() // Trie les résultats par date de création en ordre décroissant
-                        ->limit(4) // Limite le nombre de résultats à 4
+                        ->limit(3) // Limite le nombre de résultats à 4
                         ->get();
 
     // Récupérer tous les avis approuvés

@@ -29,41 +29,45 @@
     </section>
 
     <div class="container mx-auto px-4 py-16 bg-gray-50">
-        <div class="bg-white shadow-lg rounded-lg p-8 w-full text-gray-700">
-            <section id="identification" class="mb-6">
-                <h2 class="text-2xl font-semibold text-sky-700 mb-2">Identification</h2>
-                <p>Nom de l'entreprise : AJ-WEB</p>
-                <p>Adresse : 18240 Savigny-en-Sancerre, France</p>
-                <p>Numéro de téléphone : +33 6 12 34 56 78</p>
-                <p>Email : <a href="mailto:contact@aj-web.fr" class="text-sky-700 hover:underline">contact@aj-web.fr</a></p>
-                <p>Directeur de la publication : Jérémie Aubrejat</p>
-            </section>
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full text-gray-700">
+        <section id="identification" class="mb-6">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-2">Identification</h2>
+            <p>Nom de l'entreprise : AJ-WEB</p>
+            <p>Adresse : 18240 Savigny-en-Sancerre, France</p>
+            <p>Numéro de téléphone : +33 6 12 34 56 78</p>
+            <p>Email : <a href="mailto:contact@aj-web.fr" class="text-sky-700 hover:underline">contact@aj-web.fr</a></p>
+            <p>Directeur de la publication : Jérémie Aubrejat</p>
+        </section>
 
-            <section id="responsabilite" class="mb-6">
-                <h2 class="text-2xl font-semibold text-sky-700 mb-2">Responsabilité</h2>
-                <p>Le contenu du site est fourni à titre informatif. AJ-WEB ne peut être tenu responsable des erreurs ou
-                    omissions dans les informations fournies.</p>
-            </section>
+        <section id="responsabilite" class="mb-6">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-2">Responsabilité</h2>
+            <p>Le contenu du site est fourni à titre informatif. AJ-WEB ne peut être tenu responsable des erreurs ou omissions dans les informations fournies.</p>
+        </section>
 
-            <section id="propriete-intellectuelle" class="mb-6">
-                <h2 class="text-2xl font-semibold text-sky-700 mb-2">Propriété Intellectuelle</h2>
-                <p>Tous les éléments du site, y compris les textes, images, logos, et graphiques, sont protégés par des
-                    droits de propriété intellectuelle. Toute reproduction ou distribution est interdite sans autorisation.
-                </p>
-            </section>
+        <section id="propriete-intellectuelle" class="mb-6">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-2">Propriété Intellectuelle</h2>
+            <p>Tous les éléments du site, y compris les textes, images, logos, et graphiques, sont protégés par des droits de propriété intellectuelle. Toute reproduction ou distribution est interdite sans autorisation.</p>
+        </section>
 
-            <section id="politique-confidentialite" class="mb-6">
-                <h2 class="text-2xl font-semibold text-sky-700 mb-2">Politique de Confidentialité</h2>
-                <p>Les données personnelles collectées par le formulaire de contact sont utilisées uniquement pour le
-                    traitement des demandes et ne seront pas partagées avec des tiers sans votre consentement.</p>
-            </section>
+        <section id="politique-confidentialite" class="mb-6">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-2">Politique de Confidentialité</h2>
+            <p>Les données personnelles collectées par le formulaire de contact sont utilisées uniquement pour le traitement des demandes et ne seront pas partagées avec des tiers sans votre consentement.</p>
+        </section>
 
-            <section id="cookies" class="mb-6">
-                <h2 class="text-2xl font-semibold text-sky-700 mb-2">Cookies</h2>
-                <p> Conformément à la réglementation en vigueur, nous vous informons que ce site web n'utilise aucun cookie.
-                    Nous nous engageons à respecter votre vie privée et à ne collecter aucune donnée personnelle sans votre
-                    consentement explicite.</p>
-            </section>
-        </div>
+        <section id="cookies" class="mb-6">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-2">Cookies</h2>
+            <p>Conformément à la réglementation en vigueur, nous vous informons que ce site web n'utilise aucun cookie. Nous nous engageons à respecter votre vie privée et à ne collecter aucune donnée personnelle sans votre consentement explicite.</p>
+        </section>
+
+        <!-- Section pour l'hébergement -->
+        <section id="hebergeur" class="mb-6">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-2">Hébergement</h2>
+            <p>Nom de l'hébergeur : O2Switch</p>
+            <p>Adresse : 222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France</p>
+            <p>Numéro de téléphone : +33 4 44 44 60 40</p>
+            <p>Site web : <a href="https://www.o2switch.fr" class="text-sky-700 hover:underline" target="_blank">www.o2switch.fr</a></p>
+        </section>
     </div>
+</div>
+
 @endsection
